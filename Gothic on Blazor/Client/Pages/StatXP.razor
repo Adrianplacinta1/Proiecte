@@ -39,7 +39,7 @@
         <fast-tab class="fastTab" id="STR">Strength</fast-tab>
         <fast-tab class="fastTab" id="Disc">Discipline</fast-tab>
         <fast-tab class="fastTab" id="Valholl">Valholl</fast-tab>
-        <fast-tab class="fastTab" id="Caș">Caș</fast-tab>
+        <fast-tab class="fastTab" id="Caș">Cash</fast-tab>
 
         <fast-tab-panel id="STRPanel" style=" background-color: rgb(34, 2, 2);">
             <div>
@@ -72,12 +72,12 @@
 
         <fast-tab-panel id="CașPanel" style=" background-color: rgb(34, 2, 2);">
             <div display:flex>
-                <h1 style="margin-left:5vw;">Caș Progress:</h1>
+                <h1 style="margin-left:5vw;">Cash Progress:</h1>
                 @foreach (var entry in CașValues)
                 {
                     <h3 style="margin-left:6vw;">@entry</h3>
                 }
-                <fast-button class="fastButton" appearance="outline" @onclick="ShowCașBox">Add Caș</fast-button>
+                <fast-button class="fastButton" appearance="outline" @onclick="ShowCașBox">Add Cash</fast-button>
             </div>
         </fast-tab-panel>
 

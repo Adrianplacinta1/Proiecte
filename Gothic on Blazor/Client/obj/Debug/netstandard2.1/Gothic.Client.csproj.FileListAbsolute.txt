@@ -630,8 +630,6 @@ A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\Razor\_Imports.
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\Gothic.Client.RazorTargetAssemblyInfo.cache
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\Gothic.Client.csproj.CopyComplete
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\blazor\unlinked.output
-A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\MAlqTIrk7rbRvjuXS_GxO2lRnJmKqk27TVLc9Mjans8=.hash
-A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\CQdZGBTq6c1E1x3fHbqzBMWGfQHCnA1GTWeUuCqqeNc=.hash
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\99dseBOagY3mzu5Y8Eqm8gRI_o8QbbCp7R2Ew9bQ_5E=.hash
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\ZxXy75PYbzJxNfAc-SAP1nUYm4gt1jSaOpFnBb9m85M=.hash
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\BaZPMj95_YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=.hash
@@ -670,7 +668,6 @@ A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\LIfCY
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\jqp6xS5jDFDsISGorhiYZQ2if3hAiols6d4C5BNnMQ4=.hash
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\45ia6XmGIa5WI3cHUIE9KhVornlZleYW_B5FPpfD1wQ=.hash
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\K3dpli228kQQ75WVqoiIdmn8u8q8gZHixcWDdCHCRgU=.hash
-A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\eqgPknAhy1a38pG0MTvnwhOg7HQrGseQFGrHowChSX4=.hash
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\sifIvl02zqfSiv67ZRAsSa_NCvhMgTGrIUNuK8LmCNM=.hash
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\8Y81cOKaNJHZZvHu0TROikruBOenBHdE5WwI2BOkNNE=.hash
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\DG1MjidH81NA50uWH63eWmXLCxt18sJzoF2oXVlyvlY=.hash
@@ -684,14 +681,11 @@ A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\X3n9B
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\zNP4aHLW-rhi6gW72YV8xGy1rLa_RQZtwvWEpiwBSrs=.hash
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\oAIlpv09S-0jXnze744E1V88Oaw8Ql1x3Alw0hsVYdw=.hash
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\dwm_rKImjhxtOmHHVpSxOgl2oh2R26xOWihLaZSv7Vs=.hash
-A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\vTAiNxTrLHZbTqqeqmkZufxKTPdwvVwCsxxlONC8a1M=.hash
-A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\g4kj9jDeKQqpQ9VElbRku8NRD41q0ZPCK_6LtTEjkH4=.hash
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=.hash
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\UC-3Rm1NkdNdlIrzYARo_dO-HDlS5mhPxo0IQv7kma8=.hash
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\oU0moF6IIkna1pMoSD6Ze63s6aHfjCtUflz7xDmENPg=.hash
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\blazor\blazor.boot.json
-A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\c7wfGw-dFribGfB5AlWokjjVWvOonQf7ZtiKcCW0bnA=.hash
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\compressed\service-worker-assets.js.gz
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\Gothic.Client.dll.gz
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Net.Http.Json.dll.gz
@@ -820,4 +814,10 @@ A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\Gothic.Client.d
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\Gothic.Client.pdb
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\blazor\serviceworkers\wwwroot\service-worker.js
 A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\blazor\service-worker-assets.js
-A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\b3Uv-p_MT17x8yb4gLWmnXlo51x1wtFt7yT6LsK7KyE=.hash
+A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\WZK4duY4YTSVi53pIyG4ocwO-acCE8-fuvtKrFjkBq0=.hash
+A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\dvnsEDl9nxAVKcyG5XnlkvW8618MriGc1ov8VKyE4Go=.hash
+A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\LPFLbUlrdnrdmLMOAIDFC9evbMt8js3ib-fyjqgC5ug=.hash
+A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\C7QGsIunpiTOemMkcfeApoB3FLV9l0Qmb_smdcRqTYc=.hash
+A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\172bneXd5QkB1l5sfIpfnTfp1sVB4iSwLXCKeag_8fU=.hash
+A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\VPzRFtRJgPW3UWlg3aeqSbaXPnXIRgJ-xoMhHsuk6EY=.hash
+A:\Proiecte Visual Studio\Gothic\Client\obj\Debug\netstandard2.1\integrity\GgE418qgyND5VefDoG_sgkD7FHHQ6Kh4OubIhye_dYE=.hash

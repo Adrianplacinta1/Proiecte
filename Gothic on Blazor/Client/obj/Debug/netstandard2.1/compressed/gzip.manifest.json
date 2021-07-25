@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\CQdZGBTq6c1E1x3fHbqzBMWGfQHCnA1GTWeUuCqqeNc=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\C7QGsIunpiTOemMkcfeApoB3FLV9l0Qmb_smdcRqTYc=.hash",
       "Source": "A:\\Proiecte Visual Studio\\Gothic\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Gothic.Client.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Gothic.Client.dll.gz"
     },
@@ -196,7 +196,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\eqgPknAhy1a38pG0MTvnwhOg7HQrGseQFGrHowChSX4=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\WZK4duY4YTSVi53pIyG4ocwO-acCE8-fuvtKrFjkBq0=.hash",
       "Source": "A:\\Proiecte Visual Studio\\Gothic\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Gothic.Shared.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Gothic.Shared.dll.gz"
     },
@@ -266,12 +266,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\vTAiNxTrLHZbTqqeqmkZufxKTPdwvVwCsxxlONC8a1M=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\172bneXd5QkB1l5sfIpfnTfp1sVB4iSwLXCKeag_8fU=.hash",
       "Source": "A:\\Proiecte Visual Studio\\Gothic\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Gothic.Client.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Gothic.Client.pdb.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\g4kj9jDeKQqpQ9VElbRku8NRD41q0ZPCK_6LtTEjkH4=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\dvnsEDl9nxAVKcyG5XnlkvW8618MriGc1ov8VKyE4Go=.hash",
       "Source": "A:\\Proiecte Visual Studio\\Gothic\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Gothic.Shared.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Gothic.Shared.pdb.gz"
     },
@@ -296,12 +296,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\c7wfGw-dFribGfB5AlWokjjVWvOonQf7ZtiKcCW0bnA=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\VPzRFtRJgPW3UWlg3aeqSbaXPnXIRgJ-xoMhHsuk6EY=.hash",
       "Source": "A:\\Proiecte Visual Studio\\Gothic\\Client\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\b3Uv-p_MT17x8yb4gLWmnXlo51x1wtFt7yT6LsK7KyE=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\GgE418qgyND5VefDoG_sgkD7FHHQ6Kh4OubIhye_dYE=.hash",
       "Source": "A:\\Proiecte Visual Studio\\Gothic\\Client\\obj\\Debug\\netstandard2.1\\blazor\\service-worker-assets.js",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\service-worker-assets.js.gz"
     }

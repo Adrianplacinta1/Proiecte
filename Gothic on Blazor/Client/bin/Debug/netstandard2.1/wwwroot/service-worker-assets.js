@@ -557,7 +557,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-CQdZGBTq6c1E1x3fHbqzBMWGfQHCnA1GTWeUuCqqeNc=",
+      "hash": "sha256-C7QGsIunpiTOemMkcfeApoB3FLV9l0Qmb+smdcRqTYc=",
       "url": "_framework\/_bin\/Gothic.Client.dll"
     },
     {
@@ -713,7 +713,7 @@
       "url": "_framework\/_bin\/Microsoft.JSInterop.dll"
     },
     {
-      "hash": "sha256-eqgPknAhy1a38pG0MTvnwhOg7HQrGseQFGrHowChSX4=",
+      "hash": "sha256-WZK4duY4YTSVi53pIyG4ocwO\/acCE8\/fuvtKrFjkBq0=",
       "url": "_framework\/_bin\/Gothic.Shared.dll"
     },
     {
@@ -769,11 +769,11 @@
       "url": "_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-vTAiNxTrLHZbTqqeqmkZufxKTPdwvVwCsxxlONC8a1M=",
+      "hash": "sha256-172bneXd5QkB1l5sfIpfnTfp1sVB4iSwLXCKeag+8fU=",
       "url": "_framework\/_bin\/Gothic.Client.pdb"
     },
     {
-      "hash": "sha256-g4kj9jDeKQqpQ9VElbRku8NRD41q0ZPCK+6LtTEjkH4=",
+      "hash": "sha256-dvnsEDl9nxAVKcyG5XnlkvW8618MriGc1ov8VKyE4Go=",
       "url": "_framework\/_bin\/Gothic.Shared.pdb"
     },
     {
@@ -793,7 +793,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-c7wfGw\/dFribGfB5AlWokjjVWvOonQf7ZtiKcCW0bnA=",
+      "hash": "sha256-VPzRFtRJgPW3UWlg3aeqSbaXPnXIRgJ\/xoMhHsuk6EY=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
