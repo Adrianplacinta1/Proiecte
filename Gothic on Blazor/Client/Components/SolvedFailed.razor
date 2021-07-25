@@ -1,0 +1,134 @@
+﻿<div id="both">
+    <div id="solvedDiv">
+
+        <div class="solvedFailedBackgroundDiv">
+            <img class=solvedFailedBackgroundImage src="images\solvedQuests.jpg">
+            <span class="solvedMessage text">Completed Quests:</span>
+        </div>
+
+
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+
+
+    </div>
+
+
+
+    <div id="failedDiv">
+
+        <div class="solvedFailedBackgroundDiv">
+            <img class=solvedFailedBackgroundImage id="solvedFailedBackgroundImage" src="images\failedQuests.png">
+            <span class="failedMessage text">Failed Quests:</span>
+        </div>
+
+
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+
+
+    </div>
+
+</div>
+
+<style>
+
+
+    #both {
+        position: relative;
+        margin-top: 5vh;
+        min-width: 65%;
+        min-height: 5vh;
+    }
+
+    .solvedFailedBackgroundDiv {
+        min-height: 700px;
+        margin-bottom: 5vh;
+    }
+
+    .solvedFailedBackgroundImage {
+        position: absolute;
+        z-index: -5;
+        max-height: 700px;
+    }
+
+    #failedBackgroundImage {
+        height: 700px;
+        width: 1200px;
+    }
+
+    .solvedMessage {
+        position: absolute;
+        z-index: 2;
+        font-size: 4vw;
+        background-color: rgb(218, 99, 20);
+        margin-top: 310px;
+        margin-left: 28vw;
+        min-height: 15vh;
+        border-radius: 5%;
+        box-shadow: 2px 4px 15px 6px rgb(221, 172, 10);
+        transition: 0.75s;
+    }
+
+        .solvedMessage:hover {
+            box-shadow: 2px 8px 25px 20px rgb(221, 172, 10);
+        }
+
+    .failedMessage {
+        position: absolute;
+        z-index: 2;
+        font-size: 4.2vw;
+        background-color: black;
+        margin-top: 550px;
+        margin-left: 17vw;
+        box-shadow: 0px -20px 30px 30px rgba(206, 8, 8, 0.842);
+        transition: 0.75s;
+    }
+
+        .failedMessage:hover {
+            box-shadow: 0px -20px 35px 50px rgba(179, 9, 9, 0.842);
+        }
+
+
+    #solvedDiv {
+        position: absolute;
+        min-width: 65%;
+        margin-left: 15%;
+        align-self: center;
+        display: @SolvedDisplay;
+        flex-direction: column;
+    }
+
+
+
+    #failedDiv {
+        position: absolute;
+        min-width: 65%;
+        margin-left: 15%;
+        display: @FailedDisplay;
+        flex-direction: column;
+    }
+
+    .text {
+        color: rgb(199, 180, 180);
+        text-shadow: 1px 1px 8px gray;
+    }
+</style>
+
+
+@code{
+    [Parameter]
+    public string SolvedDisplay { get; set; }
+
+    [Parameter]
+    public string FailedDisplay { get; set; }
+}

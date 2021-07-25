@@ -1,0 +1,65 @@
+.logo{
+    width:90%; 
+    display:fixed;
+    align-self:center;   
+}
+
+div{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+    align-items: center;
+}
+.subtitlu_login{
+    width:90%;
+    align-self:center;
+    font-size: 5vw;
+    border:2px solid black;
+    background-color:lightslategray;
+}
+
+.optinfo_left_allign{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+input{
+    font-size:3vw;
+}
+
+
+
+label{
+    font-size:3vw;
+}
+
+.submit{
+    width:40vw;
+    height:10vh;
+    background-clip: padding-box;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("Scroll.jpg");
+}
+
+.select_size
+{
+    font-size: 2vw;
+}
+
+.back_div{
+    font-size: 2vw;
+    width: 20ex;
+    height:13ex;
+    background-clip: padding-box;
+    background-image: url("BACK.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    border:2px solid black;
+    justify-content: center;
+
+}
+

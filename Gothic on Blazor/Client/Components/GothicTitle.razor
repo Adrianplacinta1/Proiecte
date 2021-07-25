@@ -1,0 +1,15 @@
+﻿<img src="@BackgroundImage" style="        min-width: 100vw;
+        max-width: 100vw;
+        max-height: @MaxHeight;
+        margin: 0;
+        padding: 0;
+">
+
+
+@code {
+    [Parameter]
+    public string BackgroundImage { get; set; }
+
+    [Parameter]
+    public string MaxHeight { get; set; } = "500px";
+}

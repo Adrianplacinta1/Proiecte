@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1569244547 source:c:\proiecte codeblocks\din colt in colt\main.cpp
+	<iostream>
+	<graphics.h>
+	<winbgim.h>
+	<windows.h>
+	<math.h>
+	<cstdlib>
+	<time.h>
+
+1569244547 source:a:\proiecte codeblocks\din colt in colt\main.cpp
+	<iostream>
+	<graphics.h>
+	<winbgim.h>
+	<windows.h>
+	<math.h>
+	<cstdlib>
+	<time.h>
+

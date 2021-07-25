@@ -1,0 +1,561 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: cornflowerblue;
+    overflow-y: scroll;
+    max-height:100vh;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+header{
+    position:fixed;
+    min-width: 100%;
+    top:0;
+}
+
+
+.upperBar{
+    
+
+    padding: 0px;
+    margin: 0px;
+    outline:1px dashed white;
+    outline-offset: -5px;
+    background:rgb(144, 188, 255);
+    width:100%;
+    height:8%;
+    position: relative;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+.logo, #chooseYourGenre{
+    font-size: 175%;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa;
+}
+
+/*test pt scrollbar*/
+
+body::-webkit-scrollbar{
+    width:1rem;
+}
+body::-webkit-scrollbar-track{
+    background: rgb(248, 248, 248);
+}
+body::-webkit-scrollbar-thumb{
+    background: rgb(63, 112, 204);
+}
+
+
+/*navbar*/
+
+.navbar{
+
+    width:1em;
+    height: 95vh;
+    position:fixed;
+    top:3.5vh;
+    background-color:rgb(67, 89, 170);
+    transition: width 200ms ease;
+}
+
+.navbar-nav{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height:100%;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height:5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.link-text{
+    display:none;
+    margin-left:1rem;
+
+    font-size: 155%;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb;
+  
+}
+
+.nav-link svg{
+    min-width:2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar:hover{
+    width:16rem;
+
+}
+.navbar:hover .link-text{
+    display:block;
+}
+
+footer{
+    background-color: whitesmoke;
+    position: fixed;
+    bottom:0%;
+    padding: 0px;
+    margin: 0px;
+    min-width:100%;
+    text-align: center;
+}
+
+
+.navbar:hover .nav-item{
+    display:block;
+    border:1px solid Black;
+    width:8vw;
+    border-radius: 10%;
+    background-color:teal;
+}
+
+.navbar:hover .nav-item:hover{
+    background-color:  tomato;
+    transition:0.6s;
+}
+
+
+/* tabelul*/
+table {
+    border: 2px solid black;
+    background-color: rgb(238, 238, 199);
+  }
+
+th{
+    border: 1px solid black;
+    min-width:7.5vw;
+    max-width:7.5vw;
+    background-color: antiquewhite;
+}
+
+tr{
+    display:flex;
+    flex-direction: row;
+}
+
+td{
+    min-width:7.5vw;
+    max-width:7.5vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    min-height:175px;
+}
+
+#tableDiv{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 70vw;
+    max-width:70vw;
+    min-height:90vh;
+    align-self: center;
+    margin-top:10%;
+    margin-left:20%;
+    margin-bottom:10%;
+}
+
+
+
+.bookImage{
+    height:125px;
+    width:100px;
+    box-shadow: 0 0 2px 3px rgb(107, 106, 106);
+    transition: 0.8s;
+}
+
+.bookImage:hover{
+    box-shadow: 0 0 5px 20px rgb(107, 106, 106);
+}
+
+
+.changeRating, .changeStatus, 
+.changeDateStarted, .changeDateFinished{
+    display:none;
+}
+
+
+
+
+
+
+
+/*tot continutul lui index.css. Imi traba. */
+
+body{
+    margin: 0;
+    padding: 0;
+    background: cornflowerblue;
+}
+.card{
+    position: absolute;
+    width: 25em;
+    height: 40em;
+    top:55%;
+    left:70%;
+    background:white;
+    transform-style: preserve-3d;
+    transform: translate(-50%,-50%) perspective(2000px);
+    box-shadow: inset 300px 0 50px rgba(0,0,0,.35);
+    transition: 1s;
+
+}
+.card:hover {
+    transform: translate(-50%,-50%) perspective(2000px) ;
+    box-shadow: inset 20px 0 50px rgba(0,0,0,.5);
+}
+.card:before, .cardDreapta:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width:100%;
+    height:5px;
+    background: rgb(63, 112, 204);
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+}
+.card:after, .cardDreapta:after {
+    content:'';
+    position: absolute;
+    top:0;
+    right:-5px;
+    width:5px;
+    height: 100%;
+    background:rgb(106, 196, 226);
+    transform-origin: left;
+    transform: skewY(-45deg);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.card .imgBox {
+
+    width:100%;
+    height:100%;
+    position: relative;
+    transform-origin: left;
+    transition:1s;
+}
+.card:hover .imgBox{
+    transform: rotateY(-145deg);
+}
+
+.upperBar{
+    
+
+    padding: 0px;
+    margin: 0px;
+    outline:1px dashed white;
+    outline-offset: -5px;
+    background:rgb(144, 188, 255);
+    width:100%;
+    height:8%;
+    position: relative;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+.logo{
+    font-size: 175%;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa;
+}
+
+/*test pt scrollbar*/
+
+body::-webkit-scrollbar{
+    width:1rem;
+}
+body::-webkit-scrollbar-track{
+    background: rgb(248, 248, 248);
+}
+body::-webkit-scrollbar-thumb{
+    background: rgb(63, 112, 204);
+}
+
+
+/*navbar*/
+
+.navbar{
+
+    width:1em;
+    height: 95vh;
+    position:fixed;
+    background-color:rgb(67, 89, 170);
+    transition: width 200ms ease;
+}
+
+.navbar-nav{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height:100%;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height:5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.link-text{
+    display:none;
+    margin-left:1rem;
+
+    font-size: 155%;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb;
+  
+}
+
+.nav-link svg{
+    min-width:2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar:hover{
+    width:16rem;
+
+}
+.navbar:hover .link-text{
+    display:block;
+}
+
+footer{
+    background-color: whitesmoke;
+    position: fixed;
+    bottom:0%;
+    padding: 0px;
+    margin: 0px;
+    min-width:100%;
+    text-align: center;
+}
+
+
+/*test*/
+
+
+/*adaugam scris in carte*/
+
+.scris{
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width:300px;
+    max-width: 300px;
+    height:58vh;
+    border:2px solid black;
+    top:3vh;
+    left:3vw;
+}
+
+.navbar:hover .nav-item{
+    display:block;
+    border:1px solid Black;
+    width:8vw;
+    border-radius: 10%;
+    background-color:teal;
+}
+
+.navbar:hover .nav-item:hover{
+    background-color: tomato;
+    transition:0.6s;
+}
+
+
+
+/*punem scris peste coperta*/
+.card .imgBox2{
+
+    width:100%;
+    height:100%;
+    position: absolute;
+    transform-origin: left;
+    transition:1s;
+}
+/*.card:hover .imgBox2{
+    transform: rotateY(-145deg);
+}*/
+
+.par_peste{
+    position:absolute;
+    font-size:3ch;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    left:3vw;
+    top:4vh;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb;
+}
+.img_sub{
+    position:absolute;
+}
+
+.login_input{
+    font-size:2ch;
+}
+
+
+
+
+
+
+
+
+
+/*cartea dubla la My_account:*/
+
+.set2{
+    display:flex;
+    flex-direction: row;
+    min-width:80vw;
+    min-height:80vh;
+}
+
+.cardStanga{
+    position: absolute;
+    width: 25em;
+    height: 40em;
+    top:55%;
+    left:50%;
+    background:white;
+    transform-style: preserve-3d;
+    transform: translate(-50%,-50%) perspective(2000px);
+    box-shadow: inset -40px 0 50px rgba(0,0,0,.5);
+    transition: 1s;
+
+}
+.cardDreapta{
+    position: absolute;
+    width: 25em;
+    height: 40em;
+    top:55%;
+    left:70%;
+    background:white;
+    transform-style: preserve-3d;
+    transform: translate(-50%,-50%) perspective(2000px);
+    box-shadow: inset 20px 0 50px rgba(0,0,0,.5);
+    transition: 1s;
+
+}
+#scrisDreapta{
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:15vw;
+    height:58vh;
+    border:2px solid black;
+    top:3vh;
+    right:3vw;
+}
+
+#scrisStanga{
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:15vw;
+    height:58vh;
+    border:2px solid black;
+    top:3vh;
+    left:1.8vw;
+}
+
+.cardStanga:before {
+    content:'';
+    position: absolute;
+    top:-5px;
+    left:-5px;
+    width:5px;
+    height: 100%;
+    background:rgb(106, 196, 226);
+    transform-origin: left;
+    transform: skewY(45deg);
+}
+.cardStanga:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width:100%;
+    height:5px;
+    background: rgb(63, 112, 204);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+}
+
+.centerColumn{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.white{
+    background-color: white;
+}

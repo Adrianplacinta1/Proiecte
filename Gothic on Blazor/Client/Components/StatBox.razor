@@ -1,0 +1,47 @@
+﻿<div id="statScreen" style=" margin: 0; border: 0; padding: 0; max-width:100vw; height: 500px; display: flex; flex-direction: row; background-color:black;">
+    <img src="../Images/statScreen.jpg" class="statImage">
+
+    <div id="statBox">
+        <h3 style="margin-left:30px; margin-top:30px;">
+
+            STR:           0
+            <br />-> 1-H Damage: 0
+            <br />-> 2-H Damage: 0
+            <br /><br />
+            DISC:          0
+            <br /> -> Armor:      0    HP:           12
+            <br /><br />
+            VALHOLL:       0
+            <br />-> Crit:       0%   Crit Bonus:    0%
+            <br /><br />
+            CAȘ:           0
+            <br /> -> Status: RUPT IN C*R
+
+
+        </h3>
+    </div>
+    @ChildContent
+</div>
+
+<style>
+
+
+    .statImage {
+        max-width:@MaxWidth;
+    }
+    #statBox {
+        flex:1;
+        color: rgb(199, 180, 180);
+        text-shadow: 1px 1px 8px gray;
+        max-width: @MaxWidth;
+    }
+
+</style>
+@code {
+
+    [Parameter]
+    public string MaxWidth { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

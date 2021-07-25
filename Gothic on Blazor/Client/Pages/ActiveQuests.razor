@@ -1,0 +1,50 @@
+﻿@page "/ActiveQuests"
+
+<GothicTitle BackgroundImage="../Images/GothicHomeTitle2.jpg"></GothicTitle>
+<body>
+    <div class="align">
+        <h1> <u>Active Quests</u></h1>
+    </div>
+    <div style="display:flex; flex-direction:row; justify-content:space-between;">
+        <img src="../Images/questSide2.png"  class="sideImage"/>
+        <QuestCardDiv></QuestCardDiv>
+        <img src="../Images/questSide2r.png" class="sideImage"/>
+    </div>
+
+
+    <ImageText ImageSource="../Images/questBottom.png" ImgHeight="260px">
+
+        <div style="display:flex; flex-direction:column; transform:translate(-3vw)">
+            <Butoane Text="NEW QUEST"></Butoane>
+            <Butoane Text="Home Page" Href="/"></Butoane>
+        </div>
+
+    </ImageText> 
+
+</body>
+
+
+<style>
+    body{
+        background-color:black;
+    }
+    .align {
+        margin: 0;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+    }
+
+    h1 {
+        color: rgb(199, 180, 180);
+        text-shadow: 1px 1px 8px gray;
+        align-self: center;
+    }
+
+    .sideImage{
+        width:200px;
+        margin-left:2vw;
+        margin-right:2vw;
+    }
+</style>

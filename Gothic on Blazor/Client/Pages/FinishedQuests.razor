@@ -1,0 +1,82 @@
+﻿@page "/FinishedQuests"
+
+@inject IJSRuntime JsRuntime;
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Finished Quests</title>
+</head>
+
+<GothicTitle BackgroundImage="../Images/GothicHomeTitle2.jpg"></GothicTitle>
+
+<body>
+    <div class="align">
+        <h1> <u>Finished Quests</u></h1>
+    </div>
+    <div style="display:flex; align-items:center; justify-content:center; min-width:100vw;">
+        <button style="font-size:2em; margin-top:2vh; margin-bottom:2vh;"><a style="text-decoration: none; color: black;" href="/">Back</a></button>
+    </div>
+    <ImageText ImageSource="../Images/solvedFailed.png" ImgHeight="700px">
+
+        <button @onclick="SetSolved" class="solvedFailedButtons">SOLVED</button>
+        <button @onclick="SetFailed" class="solvedFailedButtons">FAILED</button>
+
+    </ImageText>
+
+
+    <SolvedFailed SolvedDisplay="@Solved" FailedDisplay="@Failed"></SolvedFailed>
+</body>
+
+
+<style>
+    body {
+        background-color: black;
+    }
+
+    .align {
+        margin: 0;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+    }
+
+    h1 {
+        color: rgb(199, 180, 180);
+        text-shadow: 1px 1px 8px gray;
+        align-self: center;
+    }
+
+    .solvedFailedButtons {
+        width: 10vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+</style>
+
+
+
+@code{
+
+    [Parameter]
+    public string Solved { get; set; } = "flex";
+    [Parameter]
+    public string Failed { get; set; } = "none";
+
+    public void SetSolved()
+    {
+        Solved = "flex";
+        Failed = "none";
+    }
+
+    public void SetFailed()
+    {
+        Solved = "none";
+        Failed = "flex";
+    }
+
+}

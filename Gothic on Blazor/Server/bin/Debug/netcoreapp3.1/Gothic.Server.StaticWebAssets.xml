@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="A:\Proiecte Visual Studio\Gothic\Client\wwwroot\" />
+  <ContentRoot BasePath="/" Path="A:\Proiecte Visual Studio\Gothic\Client\bin\Debug\netstandard2.1\wwwroot\" />
+</StaticWebAssets>

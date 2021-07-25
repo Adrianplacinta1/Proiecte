@@ -1,0 +1,20 @@
+﻿<div style="        background-image: url( @BackgroundImage );
+        min-width: 100vw;
+        max-width: 100vw;
+        min-height: 500px;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-size: contain;
+">
+    @ChildContent
+</div>
+
+@code {
+    [Parameter]
+    public string BackgroundImage { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

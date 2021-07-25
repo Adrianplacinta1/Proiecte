@@ -1,0 +1,213 @@
+﻿@page "/StatXPCounter"
+
+
+
+<div class="addBox" style="display:@DisplayValues[0]">
+    <input type="text" placeholder="STR Value (+ Other Info)" @bind-value="@AddedValue" />
+    <button class="fastButton" appearance="outline" @onclick="HideSTRBox">Add STR</button>
+</div>
+
+<div class="addBox" style="display:@DisplayValues[1]">
+    <input type="text" placeholder="Disc Value (+ Other Info)" @bind-value="@AddedValue" />
+    <button class="fastButton" appearance="outline" @onclick="HideDiscBox">Add Disc XP</button>
+</div>
+
+<div class="addBox" style="display:@DisplayValues[2]">
+    <input type="text" placeholder="Disc Value (+ Other Info)" @bind-value="@AddedValue" />
+    <button class="fastButton" appearance="outline" @onclick="HideValhollBox">Add Valholl XP</button>
+</div>
+
+<div class="addBox" style="display:@DisplayValues[3]">
+    <input type="text" placeholder="Caș Value (Date optional)" @bind-value="@AddedValue" />
+    <button class="fastButton" appearance="outline" @onclick="HideCașBox">Add Caș</button>
+</div>
+
+
+
+<GothicTitle BackgroundImage="../Images/skills.jpg"></GothicTitle>
+
+<div class="align">
+    <h1> <u style="font-size: 2em;">Stat XP Counter</u></h1>
+</div>
+
+<div style="display:flex; align-items:center; justify-content:center; min-width:100vw;">
+    <button style="font-size:2em; margin-top:2vh; margin-bottom:2vh;"><a style="text-decoration: none; color: black;" href="/">Back</a></button>
+</div>
+
+<fast-design-system-provider use-defaults style=" background-color: black">
+    <fast-tabs activeId="STR">
+        <fast-tab class="fastTab" id="STR">Strength</fast-tab>
+        <fast-tab class="fastTab" id="Disc">Discipline</fast-tab>
+        <fast-tab class="fastTab" id="Valholl">Valholl</fast-tab>
+        <fast-tab class="fastTab" id="Caș">Caș</fast-tab>
+
+        <fast-tab-panel id="STRPanel" style=" background-color: rgb(34, 2, 2);">
+            <div>
+                <h1 style="margin-left:5vw;">Strength Progress:</h1>
+                @foreach (var entry in StrValues)
+                {
+                    <h3 style="margin-left:6vw;">@entry</h3>
+                }
+
+                <fast-button class="fastButton" appearance="outline" @onclick="ShowSTRBox">Add STR</fast-button>
+
+            </div>
+        </fast-tab-panel>
+
+        <fast-tab-panel id="DiscPanel" style=" background-color: rgb(34, 2, 2);">
+            <div display:flex>
+                <h1 style="margin-left:5vw;">Discipline Progress:</h1>
+                <h3 style="margin-left:6vw; max-width:95vw">@DiscValues</h3>
+                <fast-button class="fastButton" appearance="outline" @onclick="ShowDiscBox">Add Disc XP</fast-button>
+            </div>
+        </fast-tab-panel>
+
+        <fast-tab-panel id="ValhollPanel" style=" background-color: rgb(34, 2, 2);">
+            <div display:flex>
+                <h1 style="margin-left:5vw;">Valholl Progress:</h1>
+                <h3 style="margin-left:6vw; max-width:95vw">@ValhollValues</h3>
+                <fast-button class="fastButton" appearance="outline" @onclick="ShowValhollBox">Add Valholl XP</fast-button>
+            </div>
+        </fast-tab-panel>
+
+        <fast-tab-panel id="CașPanel" style=" background-color: rgb(34, 2, 2);">
+            <div display:flex>
+                <h1 style="margin-left:5vw;">Caș Progress:</h1>
+                @foreach (var entry in CașValues)
+                {
+                    <h3 style="margin-left:6vw;">@entry</h3>
+                }
+                <fast-button class="fastButton" appearance="outline" @onclick="ShowCașBox">Add Caș</fast-button>
+            </div>
+        </fast-tab-panel>
+
+    </fast-tabs>
+</fast-design-system-provider>
+
+
+
+<style>
+
+    .fastTab {
+        color: rgb(199, 180, 180);
+        text-shadow: 1px 1px 8px gray;
+        font-size:1.5em;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    .align {
+        margin: 0;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+    }
+
+    h1, h3 {
+        color: rgb(199, 180, 180);
+        text-shadow: 1px 1px 8px gray;
+        align-self: center;
+    }
+
+    .fastButton {
+        color: rgb(199, 180, 180);
+        text-shadow: 1px 1px 8px gray;
+        background-color: black;
+        margin-left: 10vw;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        border: 1px solid darkorange;
+    }
+
+    .addBox {
+        position: fixed;
+        z-index: 10;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+</style>
+
+
+
+
+@code{
+    public List<string> StrValues { get; set; } = new List<string> { "15 (4.VI.2020)", "19 (12.VII.2020)", "23 (6.VIII.2020)" };
+
+    public List<string> CașValues { get; set; } = new List<string> { "1000 (4.VI.2020)", "3500 (22.VI.2020)", "6000 (17.VII.2020)", "5800 (5.VIII.2020)" };
+
+    public List<string> DisplayValues { get; set; } = new List<string> { "none", "none", "none", "none" };
+
+    public string DiscValues { get; set; } = "0 + 250 =250 + 175 = 425";
+
+    public string ValhollValues { get; set; } = "0 + 250 =250 + 200 = 450";
+
+    public string AddedValue { get; set; } = "";
+
+
+
+
+
+    public void ShowSTRBox()
+    {
+        DisplayValues[0] = "flex";
+    }
+
+    public void HideSTRBox()
+    {
+        StrValues.Add(AddedValue);
+        AddedValue = "";
+        DisplayValues[0] = "none";
+    }
+
+    public void ShowDiscBox()
+    {
+        DisplayValues[1] = "flex";
+    }
+
+    public void HideDiscBox()
+    {
+        var total = DiscValues.Split("=");
+        int Total = int.Parse(total[total.Length - 1]);
+        int added = int.Parse(AddedValue.Split("(")[0]);
+        Total += added;
+        DiscValues += " + " + AddedValue +" = " + Total.ToString();
+        AddedValue = "";
+        DisplayValues[1] = "none";
+    }
+
+    public void ShowValhollBox()
+    {
+        DisplayValues[2] = "flex";
+    }
+
+    public void HideValhollBox()
+    {
+        var total = ValhollValues.Split("=");
+        int Total = int.Parse(total[total.Length - 1]);
+        int added = int.Parse(AddedValue.Split("(")[0]);
+        Total += added;
+        ValhollValues += " + " + AddedValue + " = " + Total.ToString();
+        AddedValue = "";
+        DisplayValues[2] = "none";
+    }
+
+
+
+    public void ShowCașBox()
+    {
+        DisplayValues[3] = "flex";
+    }
+
+    public void HideCașBox()
+    {
+        CașValues.Add(AddedValue);
+        AddedValue = "";
+        DisplayValues[3] = "none";
+    }
+}

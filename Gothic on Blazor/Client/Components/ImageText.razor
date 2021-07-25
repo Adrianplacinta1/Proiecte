@@ -1,0 +1,43 @@
+﻿
+    <div style="min-height: @ImgHeight;
+        max-height: @ImgHeight;
+        display: flex;
+        justify-content:center;
+        ">
+
+        <img src="@ImageSource" class="absoluteImg" />
+        <p class="absoluteText text">@ChildContent</p>
+    </div>
+
+
+    <style>
+    .absoluteImg {
+        position: absolute;
+        min-height: @ImgHeight;
+        max-height: @ImgHeight;
+        width: 100vw;
+        z-index: 1;
+    }
+    .absoluteText{
+        max-width:33vw;
+        position:absolute;
+        align-self:center;
+        z-index:3;
+    }
+
+    .text {
+        color: rgb(199, 180, 180);
+        text-shadow: 1px 1px 8px gray;
+    }
+    </style>
+@code {
+    [Parameter]
+    public string ImageSource { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public string ImgHeight { get; set; }="500px";
+
+}

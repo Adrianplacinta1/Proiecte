@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\Book_Page1.1.css">
+    <title>Book WormHole Book Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="upperBar">
+            <div class="logo">
+                Book WormHole
+            </div>
+        </div>
+
+        <div class="searchBar">
+
+        </div>
+    </header>
+
+    <nav class="navbar">
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="BoRe_home1.1.html" class="nav-link">
+                    <span class="link-text">Log Out</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="My_Account1.1.html" class="nav-link">
+                    <span class="link-text">My Account</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="What's_hot1.1.html" class="nav-link">
+                    <span class="link-text">WHAT'S HOT</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="Users_followed1.1.html" class="nav-link">
+                    <span class="link-text">Users Followed</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="My_Groups1.1.html" class="nav-link">
+                    <span class="link-text">Groups</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="centered">
+        <div id="everythingAboutBook">
+            <p><img class="bookImage" src="images/books/taiko.jpg"></p>
+            <p><label>Title: </label><label id="getTitle">Taiko</label></p>
+            <p><label>Author: </label><label id="getAuthor">Eiji Yoshikawa</label></p>
+            <p><label>Rating: </label><label id="getRating">4.8/5</label></p>
+            <p><label>Genre: </label><label id="getGenre">History, War, Biography</label></p>
+            <p><label>Number of Pages: </label><label id="getGenre">1500</label></p>
+            <p><label>Publisher: </label><label id="getPublisher">Polirom</label></p>
+            <p><label>Edition: </label><label id="getEdition">II</label></p>
+            <p><button>Add to my books</button></p>
+            <p><button id="reviewButton">Write a review</button></p>
+            <div id="reviewDiv">
+                <p><textarea id="reviewTextArea"></textarea></p>
+                <p><button id="postReview">Post Review</button></p>
+                <p><button id="cancel">Cancel</button></p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <br><br>
+
+    <div class="reviewsContainer">
+
+        <div class="centered" id="whereMyReviewsAt">
+            <div class="individualReview">
+                <H1>REVIEWS:</H1>
+            </div>
+            <div class="individualReview">
+                <div class="usersFound">
+                    <img src=images/users/thoughty2.jpg>
+                    <p class="text">Thoughty2</p>
+                </div>
+
+                <p><textarea class="userReviewsTextArea" readonly>Heey, Thoughty2 here! This is by far one of the most interesting books on Japanese feudal history I've had the pleasure to read. 
+    Taiko captures the turmoil and confusion of the era perfectly, but its greatest achievement is the image it offers us about the three key figures of the time: Oda Nobunaga, Toyotomi Hideyoshi and Tokugawa Ieyasu.
+                </textarea></p>
+                <br><br>
+            </div>
+
+            <div class="individualReview">
+                <div class="usersFound">
+                    <img src=images/users/suzukiKoharu.jpg>
+                    <p class="text">Suzuki Koharu</p>
+                </div>
+                <p><textarea class="userReviewsTextArea" readonly>It was amazing! 5/5</textarea></p>
+                <br><br>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        MR-AP©
+    </footer>
+</body>
+
+<script src="js/Book_Page1.1.js"></script>
+
+</html>

@@ -1,0 +1,81 @@
+
+body{
+    margin:0;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-content:stretch;
+}
+
+#titleImage{
+    width:100%;
+    max-height:500px;
+    margin:0;
+    padding:0;
+}
+
+.text{
+    color: rgb(199, 180, 180);
+    text-shadow:1px 1px 8px gray;
+}
+
+.center{
+    align-self: center;
+}
+
+#questAndImages{
+    display:flex;
+    flex-direction: row;
+}
+
+
+
+#questDiv{
+    overflow-y:scroll;
+    max-height:1100px;
+    min-width:65%;
+    align-self: center;
+    display:flex;
+    flex-direction: column;
+}
+
+.sideImage{
+    margin-left:5vw;
+}
+
+.cardTitle {
+    box-shadow: 0 4px 8px 0 gray;
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    background-color: rgb(34, 2, 2);
+    min-width:90%;
+    align-self: center;
+    margin-bottom: 2vh;
+    text-indent: 2vw;
+  }
+  .cardTitle:hover {
+    box-shadow: 0 8px 16px 0 gray;
+  }
+  /* Add rounded corners to the top left and the top right corner of the image */
+
+
+  #bottomImage{
+      height: 260px;
+      position:absolute;
+
+    }
+.butoane{
+    position:absolute;
+    min-width:20%;
+    min-height:4vh;
+    margin-top:3vh;
+    margin-left:40%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+

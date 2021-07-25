@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flexor">
+        <div class="relativeDiv"><img src="images\GothicHomeTitle2.jpg" class="absoluteImage"></div>
+        <div class="relativeDiv"><img src="images\\statScreen.jpg" class="absoluteImage"></div>
+    </div>
+</body>
+<style>
+    .flexor{
+        display:flex;
+        flex-direction: column;
+    }
+    .absoluteImage{
+        position:absolute;
+        min-height:500px; 
+        max-height:500px; 
+    }
+    .relativeDiv{
+        position:relative;
+        min-height:500px; 
+        max-height:500px;    
+        }
+</style>
+</html>

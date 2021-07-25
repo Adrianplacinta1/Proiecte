@@ -1,0 +1,134 @@
+
+body{
+    margin:0;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-content:stretch;
+}
+
+#titleImage{
+    width:100%;
+    max-height:500px;
+    margin:0;
+    padding:0;
+}
+
+.text{
+    color: rgb(199, 180, 180);
+    text-shadow:1px 1px 8px gray;
+}
+.center{
+    align-self: center;
+}
+
+.butoane{
+    min-width:15%;
+    max-height:4vh;
+    margin-top:3vh;
+}
+
+#options{
+    display:flex;
+    flex-direction: row;
+    background-image: url("images\\solvedFailed.png");
+    min-height:758px;
+}
+
+#solved{
+    margin-left:33%;
+    margin-right: 2%;
+}
+#failed{
+    margin-left:3%;
+}
+
+#both{
+    position: relative;
+    margin-top:5vh;
+    min-width:65%;
+    min-height:5vh;
+}
+
+.solvedFailedBackgroundDiv{
+    min-height:700px;
+    margin-bottom: 5vh;
+}
+.solvedFailedBackgroundImage{
+    position:absolute;
+    z-index: -5;
+    max-height:7oopx;
+}
+#failedBackgroundImage{
+    height:700px;
+    width: 1200px;
+}
+.solvedMessage{
+    position:absolute;
+    z-index: 2;
+    font-size: 4.6vw;
+    background-color: rgb(218, 99, 20);
+    margin-top:310px;
+    margin-left:28vw;
+    min-height:15vh;
+    border-radius: 5%;
+    box-shadow: 2px 4px 15px 6px rgb(221, 172, 10);
+    transition: 0.75s;
+}
+.solvedMessage:hover {
+    box-shadow: 2px 8px 25px 20px rgb(221, 172, 10);
+  }
+
+.failedMessage{
+    position:absolute;
+    z-index: 2;
+    font-size: 4.6vw;
+    background-color: black;
+    margin-top:550px;
+    margin-left:17vw;
+
+    box-shadow: 0px -20px 30px 30px rgba(206, 8, 8, 0.842);
+    transition: 0.75s;
+}
+.failedMessage:hover {
+    box-shadow: 0px -20px 35px 50px rgba(179, 9, 9, 0.842);
+  }
+
+
+#solvedDiv  {
+    position: absolute;
+    min-width:65%;
+    margin-left:15%;
+    align-self: center;
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+#failedDiv{
+    position:absolute;
+    min-width:65%;
+    margin-left:15%;
+    display:flex;
+    flex-direction: column;
+    visibility:hidden;
+}
+
+
+.cardTitle {
+    box-shadow: 0 4px 8px 0 gray;
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    background-color: rgb(34, 2, 2);
+    min-width:90%;
+    align-self: center;
+    margin-bottom: 2vh;
+    text-indent: 2vw;
+  }
+  .cardTitle:hover {
+    box-shadow: 0 8px 16px 0 gray;
+  }
+  /* Add rounded corners to the top left and the top right corner of the image */
+
+

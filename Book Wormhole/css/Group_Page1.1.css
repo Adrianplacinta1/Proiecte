@@ -1,0 +1,350 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: cornflowerblue;
+    overflow-y: scroll;
+    max-height:100vh;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+header{
+    position:fixed;
+    min-width: 100%;
+    top:0;
+}
+
+
+.upperBar{
+    
+
+    padding: 0px;
+    margin: 0px;
+    outline:1px dashed white;
+    outline-offset: -5px;
+    background:rgb(144, 188, 255);
+    width:100%;
+    height:8%;
+    position: relative;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+.logo, #chooseYourGenre{
+    font-size: 175%;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa;
+}
+
+/*test pt scrollbar*/
+
+body::-webkit-scrollbar{
+    width:1rem;
+}
+body::-webkit-scrollbar-track{
+    background: rgb(248, 248, 248);
+}
+body::-webkit-scrollbar-thumb{
+    background: rgb(63, 112, 204);
+}
+
+
+/*navbar*/
+
+.navbar{
+
+    width:1em;
+    height: 95vh;
+    position:fixed;
+    top:3.5vh;
+    background-color:rgb(67, 89, 170);
+    transition: width 200ms ease;
+}
+
+.navbar-nav{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height:100%;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height:5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.link-text{
+    display:none;
+    margin-left:1rem;
+
+    font-size: 155%;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb;
+  
+}
+
+.nav-link svg{
+    min-width:2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar:hover{
+    width:16rem;
+
+}
+.navbar:hover .link-text{
+    display:block;
+}
+
+footer{
+    background-color: whitesmoke;
+    position: fixed;
+    bottom:0%;
+    padding: 0px;
+    margin: 0px;
+    min-width:100%;
+    text-align: center;
+}
+
+
+.navbar:hover .nav-item{
+    display:block;
+    border:1px solid Black;
+    width:8vw;
+    border-radius: 10%;
+    background-color:teal;
+}
+
+.navbar:hover .nav-item:hover{
+    background-color:  tomato;
+    transition:0.6s;
+}
+
+/*cardurile de useri*/
+.usersFound{
+    margin:2%;
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(173, 27, 27);
+    min-width:150px;
+    max-width:150px;
+    min-height:3vh;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 5px white;
+    transition:0.3s;
+ }
+ 
+ .usersFound:hover{
+     margin:2%;
+     display:flex;
+     background-color: rgb(88, 7, 7);
+     min-width:150px;
+     max-width:150px;
+     min-height:3vh;
+     align-content: center;
+     justify-content: center;
+     box-shadow: 0 0 25px 15px white;
+     transition:0.3s;
+  }
+ 
+  .usersFound:active{
+     margin:2%;
+     display:flex;
+     background-color: rgb(88, 7, 7);
+     min-width:150px;
+     max-width:150px;
+     min-height:3vh;
+     align-content: center;
+     justify-content: center;
+     box-shadow: 0 0 25px 15px white;
+     transition:0.3s;
+  }
+ 
+  .usersFound img{
+      max-height:120px;
+      max-width:90px;
+      margin-top:2vh;
+      border:1px solid white;
+  }
+
+
+/*div-urile specifice paginii*/
+.text{
+    color: rgb(209, 164, 66);
+    text-shadow:1px 1px 8px gray;
+}
+
+.centeredColumn{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    min-height: 100%;
+    min-width:100%;
+    margin-top:10%;
+    margin-bottom:10%;
+}
+
+.leftColumn{
+    display:flex;
+    flex-direction:column;
+    min-height: 100%;
+    min-width:100%;
+}
+
+#infoDiv, #groupMembers{
+    background-color: white;
+    min-width:200px;
+    max-width:550px;
+}
+
+.marginLeft10px{
+    margin-left: 10px;
+}
+
+.marginLeft20px{
+    margin-left: 20px;
+}
+
+.row{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#joinLeaveGroup{
+    max-width: 200px;
+    text-align: center;
+    align-self: center;
+    height:8vh;
+    font-size: large;
+    border-radius: 50%;
+}
+
+#activityDiv{
+    background-color: white;
+    min-width:100px;
+    min-height:100px;
+}
+
+
+/* tabelul*/
+table {
+    border: 2px solid black;
+    background-color: rgb(238, 238, 199);
+  }
+
+th{
+    border: 1px solid black;
+    min-width:10vw;
+    max-width:10vw;
+    background-color: antiquewhite;
+}
+
+tr{
+    display:flex;
+    flex-direction: row;
+}
+
+td{
+    min-width:10vw;
+    max-width:10vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    min-height:175px;
+}
+
+.tableDiv{
+    display:flex;
+    min-width: 70vw;
+    max-width:70vw;
+    min-height:1vh;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.bookImage{
+    height:200px;
+    width:160px;
+    box-shadow: 0 0 2px 3px rgb(107, 106, 106);
+    transition: 0.8s;
+}
+
+.bookImage:hover{
+    box-shadow: 0 0 5px 20px rgb(107, 106, 106);
+}
+
+
+/*Search-ul*/
+
+.hiddenID{  /* o sa avem nevoie de ID pt requesturi, dar nu e cazul sa il si afisam in pagina*/
+    display:none;
+}
+
+#searchResults{
+    align-self: center;
+    justify-self: center;
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top:5vh;
+    margin-bottom: 5vh;
+    min-width: 400px;
+    max-width: 550px;
+    border:1px solid black;
+}
+
+.bookImage{
+    height:200px;
+    width:160px;
+    box-shadow: 0 0 2px 3px rgb(107, 106, 106);
+    transition: 0.8s;
+}
+
+.bookImage:hover{
+    box-shadow: 0 0 5px 20px rgb(107, 106, 106);
+}
+
+.book{
+    margin-top:5vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}

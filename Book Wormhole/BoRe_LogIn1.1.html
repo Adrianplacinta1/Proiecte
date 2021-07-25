@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\index.css">
+    <title>Book WormHole Log In</title>
+</head>
+<body>
+    <header>
+        <div class="upperBar">
+            <div class="logo">
+                Book WormHole
+            </div>
+        </div>
+
+        <div class="searchBar">
+
+        </div>
+    </header>
+
+   <nav class="navbar">
+  
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="BoRe_home1.1.html" class="nav-link">
+                    <span class="link-text">Back</span>
+                </a>
+        </ul>
+   </nav>
+
+    <div class="card">
+        <div class="scris">
+            <p>Scroll to the left for options.</p>
+            <p>OR</p>
+            <div>
+                <label for="What"></label>
+                <label for="Search">Search </label>
+
+                <select name="What" id="What">
+                   <option value="Books">Books</option>
+                   <option value="By Author">By Author</option>
+                   <option value="Users">Users</option>
+                   <option value="Groups">Groups</option>
+               </select>
+
+               <br> <br>
+
+               <input type="text"id="Search" name="Search">
+            </div>
+        </div>
+        <div class="imgBox2">
+            <img class="img_sub" src="images/genericBook.jpg" alt="GenericBook">
+
+                <form class="par_peste">
+                    <label for="user">User Name*:</label>
+                    <br>
+                    <input class="login_input" type="text",name="user", placeholder="User_Name", id="userName" required>
+
+                    <br><br>
+
+                    <label for="E-mail">E-mail*:</label>
+                    <br>
+                    <input class="login_input" id="userEmail" type="text",name="E-mail" placeholder="someone@mail.com", required>
+
+                    <br><br>
+
+                    <label for="Password">Password*:</label>
+                    <br>
+                    <input class="login_input" id="userPassword" type="password",name="Password" placeholder="**********", required>
+
+                    <br><br>
+
+                    <form>
+                        <button class="button" id="submitButton" type="button">Submit</button>
+                    </form>
+                </form>
+        </div>
+
+    </div>
+    <footer>
+        MR-AP©
+    </footer>
+    <script src="js/BoRe_Login1.1.js"></script>
+</body>
+</html>

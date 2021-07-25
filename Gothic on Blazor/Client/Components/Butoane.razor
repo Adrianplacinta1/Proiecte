@@ -1,0 +1,12 @@
+﻿<button style="min-width: @MinWidth; max-height: 4vh; margin-top: 3vh;"><a style ="text-decoration: none; color: black;" href="@Href">@Text</a></button>
+
+@code {
+    [Parameter]
+    public string Href { get; set; }
+
+    [Parameter]
+    public string Text { get; set; }
+
+    [Parameter]
+    public string MinWidth { get; set; } = "20%";
+}

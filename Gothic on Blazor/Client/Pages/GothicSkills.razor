@@ -1,0 +1,59 @@
+﻿@page "/GothicSkills"
+<GothicTitle BackgroundImage="../Images/statScreen.jpg" MaxHeight="750px"></GothicTitle>
+
+<div>
+    <div class="align">
+        <h1> <u style="font-size: 1.5em;">Gothic Skills</u></h1>
+    </div>
+</div>
+
+
+
+<div style="display:flex; flex-direction:column; justify-content:center; background-color: rgb(34, 2, 2); align-items:center;">
+    <div style=" display: flex; flex-direction: column; align-items: center;">
+        <br />
+        <button style="font-size:3em;">New Skill</button>
+        <br />
+        <button style="font-size:2em;"><a style="text-decoration: none; color: black;" href="/">Back</a></button>
+        <br />
+    </div>
+
+    <div class="sidesAndSkills" style="display:flex; flex-direction:row; margin-bottom:12em;">
+        <img src="../Images/skillSide.png"  class="sideImages"/>
+        <div style="overflow-y: scroll; max-height: 1100px; min-width: 65vw; max-width: 65vw; display: flex; flex-direction: column;">
+            <SkillCard></SkillCard>
+            <SkillCard></SkillCard>
+            <SkillCard></SkillCard>
+            <SkillCard></SkillCard>
+            <SkillCard></SkillCard>
+        </div>
+        <img src="../Images/skillSideR.png" class="sideImages"/>
+    </div>
+
+    <img src="../Images/skillBottom.png" style="min-width:100vw; max-width:100vw;" />
+</div>
+
+
+<style>
+    .sideImages{
+        margin-left:3vw;
+        margin-right:3vw;
+    }
+</style>
+
+
+<style>
+    .align {
+        margin: 0;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+    }
+
+    h1 {
+        color: rgb(199, 180, 180);
+        text-shadow: 1px 1px 8px gray;
+        align-self: center;
+    }
+</style>

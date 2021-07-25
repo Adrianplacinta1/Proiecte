@@ -1,0 +1,53 @@
+
+body{
+    margin:0;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-content:stretch;
+}
+
+#titleImage{
+    width:100%;
+    max-height:500px;
+    margin:0;
+    padding:0;
+}
+h1{
+    color: rgb(199, 180, 180);
+    text-shadow:1px 1px 8px gray;
+    align-self: center;
+}
+#intro{
+    background-image: url("images\\Intro.png");
+    min-height:500px;
+    background-size: contain;
+    background-position: center;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.text{
+    color: rgb(199, 180, 180);
+    text-shadow:1px 1px 8px gray;
+}
+
+#mainQuest{
+    background-image: url("images\\MainQuest2.png");
+    min-height:500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#mainQuestText{
+   margin-left:20vw;
+   max-width:50%;
+}
+
