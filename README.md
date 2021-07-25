@@ -21,4 +21,4 @@ diametral opus al tablei, inaintea adversarului. Se poate juca atat contra calcu
 cu HabitRPG/Habitica, dar care sa aduca un omagiu seriei de jocuri "Gothic". Ideea a fost crearea unei agende cu ajutorul 
 careia utilizatorul sa isi organizeze atat programul zilnic, cat si cel pe termen lung, asemeni structurii dintr-un joc video:
 misiuni, obiective, abilitati, etc. Proiectul cuprinde doar o parte din paginile web. El a fost inceput in Visual Studio Code,
-apoi a fost continuat in framework-ul Blazor (varianta Gothic Blazor cuprinde mai multe pagini).
+apoi a fost continuat in framework-ul Blazor (varianta Gothic on Blazor cuprinde mai multe pagini).
