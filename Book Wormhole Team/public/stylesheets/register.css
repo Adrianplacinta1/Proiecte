@@ -1,0 +1,291 @@
+/*ALL ALL classes and id use the same naming conventions ith '-' between words and small letters*/
+body{
+    /*No annoynig extra spacing*/
+    margin:0px;
+    padding:0px;
+    /* Full height adn width*/
+    height:100%;
+    width:100%;
+    /* The image used */
+    /*if image is large use cover and no-repeat + background postiton center else let it be like this*/
+    background-image: url("../images/shattered.png");
+    background-color: #f2eecb;
+  
+    /* Center and scale the image nicely */
+    /* background-position: center; */
+    background-attachment: fixed;
+    background-repeat: repeat;
+    /* background-size: cover; */
+    /* text-style */
+    font-family: Times Roman, sans-serif;
+    font-size: 3vmin;
+    color:#FFFFF0;
+    overflow: hidden;
+  }
+.background-wrapper{
+    /*No annoynig extra spacing*/
+    margin:0px;
+    margin-top: 5vh;
+    margin-bottom: 30vmin;
+    padding:0px;
+    /* Full height adn width*/    
+    height:80vmin;
+    width:100vw;
+    /*Centering the register form background*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#background-register{
+    /*No annoynig extra spacing*/
+    margin:0px;
+    padding:0px;
+    /*Size*/
+    height:70vmin;
+    width:70vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* border: 1px solid red; */
+}
+#background-image{
+    /*No annoynig extra spacing*/
+    margin:0px;
+    padding:0px;
+    /*Size*/
+    height:100%;
+    width:auto;
+    /*Shadow for all browsers*/
+    -webkit-filter: drop-shadow(10px 10px 20px #222);
+    filter: drop-shadow(10px 10px 20px #222);
+    /* -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')"; */
+
+}
+#title{
+    padding:0.1em;
+    font-size: 3.5vmin;
+    margin-bottom:5vh;
+    text-align: center;
+    text-shadow: 1px 1px 0 rgb(27, 27, 27), 
+    2px 2px 0 rgb(0, 0, 0);
+    border-bottom:0.1em solid rgb(255, 255, 255);
+}
+#book-wrapper{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:40vmin;
+    width: 40vmin;
+}
+#register-form{
+    /*No annoynig extra spacing*/
+    margin:0px;
+    padding:0px;
+    /*Size*/
+    height:40vmin;
+    width:40vmin;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* border:3px solid blue; */
+}
+#register-form-wrapper{
+
+    /*No annoynig extra spacing*/
+    margin:0px;
+    padding:0px;
+    /*Size*/
+    height:40vh;
+    width:40vh;
+    /*Position on image*/
+    /*Flex-centering*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+
+}
+.register-input{
+    /*Extra spacing*/
+    margin:0px;
+    margin-bottom:3vh;
+    padding:0px;
+    /*Size*/
+    height:4vmin;
+    width:100%;
+    /*Text-style*/
+    text-align: center;
+    font-family: Times Roman, sans-serif;
+
+    font-size: 2.5vmin;
+
+    /* border-radius: 50px;
+    color:rgb(72, 55, 38);
+    border:3px solid transparent;
+    display: flex;
+    justify-content:center;
+    border-radius: 50px;
+    box-shadow:  3px 3px 3px #523f2d, 
+                -3px -3px 3px #70553d; */
+
+    background-color: rgb(255, 242, 208);
+    background-color: transparent;
+    border: transparent;
+    color:#FFFFF0 ;
+    border-bottom:0.2em solid white;
+}
+.register-input:focus{
+    outline: none;
+    /* box-shadow: 0px 0px 3px 4px #ffb648; */
+    background-color: rgba(255, 255, 255, 0.544);
+}
+.register-input::selection{
+    background-color: rgb(255, 177, 59);
+    color:#ffffff ;
+}
+footer{
+
+    bottom:0;
+    position: absolute;
+    background: url('../images/lowerBooCase.png');
+	background-size: contain;
+    height: 8vmin;
+    width:100vw;
+	background-repeat: repeat-x;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+/*UNUSED*/
+#footer-background-image{
+  /*No annoynig extra spacing*/
+  margin:0px;
+  padding:0px;
+  /*Size*/
+  height:auto;
+  width:50vh;
+  /*Shadow for all browsers*/
+  -webkit-filter: drop-shadow(10px 10px 20px #222);
+  filter: drop-shadow(10px 10px 20px #222);
+  /* -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#222')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#222')"; */
+
+  position: fixed;
+  bottom:0px;
+  left:0px
+}
+/*UNUSED*/
+
+.register-another-site-wrapper{
+    /*No annoynig extra spacing*/
+    margin:0px;
+    height: 90%;
+    padding:0px;
+    width: 10vmin;
+    z-index: 2;
+    position: relative;
+}
+.register-another-site{
+    height:10vmin;
+    width:auto;
+    -webkit-filter: drop-shadow(5px 5px 10px rgb(135, 135, 135));
+     filter: drop-shadow(0.3em 1.5em 1.3em rgb(88, 88, 88));
+    /* -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')"; */
+
+    transition: height  0.5s ease-in-out;
+
+}
+.register-another-site:hover{
+    -webkit-filter: drop-shadow(5px 5px 0px rgb(135, 135, 135));
+     filter: drop-shadow(0.3em 0em 1.3em rgb(88, 88, 88));
+    /* -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')"; */
+    height:9vh;
+    
+    transition:  height  0.5s ease-in-out;
+}
+.register-another-site-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:25vh;
+    position: absolute;
+    top:8%;
+    left:100%
+}
+header{
+    position: relative;
+    height: 10vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+    background-color:#4c3b32;
+    border-bottom: 1vmin solid #222;
+
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 5vmin;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+
+}
+
+#submit-button{
+    padding-bottom: 25%;
+    height:5vmin;
+    width: 10vmin;
+    position: absolute;
+    top:88%;
+
+    color:#f5f5f5;
+    
+    font-family: Times Roman,sans-serif;
+    font-size: 2vmin;
+    background-color: rgb(220, 20, 60);
+    border: none;
+    clip-path: polygon(100% 0, 100% 100%, 50% 60%, 0 100%, 0 0);
+    transition: height 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    z-index: 100;
+}
+#submit-button:hover{
+    height:18vmin;
+    transition: height 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+#terms-and-conditions{
+    margin-top:1em;
+    font-size:1.8vmin;
+}
+#logo{
+    height:9vmin;
+    width:auto
+}

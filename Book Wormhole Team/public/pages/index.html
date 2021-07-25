@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/recomandation.css">
+    <link rel="stylesheet" href="../stylesheets/global.css">
+    <script src="https://kit.fontawesome.com/0ca67d7a6d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../images/logo-light.png"/>
+    <title>BookWormhole</title>
+</head>
+<body>
+  <header>
+      <img src="../images/logo-light.png" alt="logo-art" id="logo">
+      <nav id="main">
+          <a href="myBooks.html" class="custom-links header">My Books</a>
+          <div class="custom-links header" id="browse">Browse<i class="fas fa-caret-down"></i>
+            <div id="browse-dropdown">
+              <a href="search.html"  class="custom-links header">Search</a>
+              <a href="recomandations.html"  class="custom-links header">Recommendations</a>
+              <a href="bookfeed.html"  class="custom-links header">BookFeed</a>
+            </div>
+          </div>
+          <a href="comunity.html" class="custom-links header">Comunity</a>
+      </nav>
+      <nav id="account">
+          <a href="notifications.html" class="custom-links header"><i class="fas fa-bell"></i></a>
+          <a href="messages.html" class="custom-links header"><i class="fas fa-comments"></i></a>
+          <a href="friends.html" class="custom-links header"><i class="fas fa-users"></i></a>
+          <a href="account.html" class="custom-links header"><i class="fas fa-user-circle"></i></a>
+          <a href="login.html" class="custom-links header"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+
+      </nav>
+      <div class="mobile-nav-switch">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>        
+      </div>
+  </header>
+
+  <div id="bookshelf-wrapper">
+    <div id="bookshelf">
+      <div class="bookrow-shelf">
+        <div class="bookrow">
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+            <div class="review-stars">
+                <input type="radio" name="star-1" id="star1-1"><label for="star1-1"></label>
+                <input type="radio" name="star-1" id="star2-1"><label for="star2-1"></label>
+                <input type="radio" name="star-1" id="star3-1"><label for="star3-1"></label>
+                <input type="radio" name="star-1" id="star4-1"><label for="star4-1"></label>
+                <input type="radio" name="star-1" id="star5-1"><label for="star5-1"></label>
+            </div>
+            <div class="read-state">
+              <div class="select-container">
+                
+                <div class="options-container">
+                    <div class="option">
+                      <input type="radio" class="radio" id="read-state-1-1" name="read-state">
+                      <label for="read-state-1-1">Read</label>
+                    </div>
+                    <div class="option">
+                      <input type="radio" class="radio" id="read-state-1-2" name="read-state">
+                      <label for="read-state-1-2">Reading</label>
+                    </div>
+                    <div class="option">
+                      <input type="radio" class="radio" id="read-state-1-3" name="read-state">
+                      <label for="read-state-1-3">Want to read</label>
+                    </div>
+                </div>
+
+                <div class="selected">
+                  To Read
+                  <img src="../images/arrow-down.png" alt="arrow" class="arrow">
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+            <div class="review-stars">
+              <input type="radio" name="star-2" id="star1-2"><label for="star1-2"></label>
+              <input type="radio" name="star-2" id="star2-2"><label for="star2-2"></label>
+              <input type="radio" name="star-2" id="star3-2"><label for="star3-2"></label>
+              <input type="radio" name="star-2" id="star4-2"><label for="star4-2"></label>
+              <input type="radio" name="star-2" id="star5-2"><label for="star5-2"></label>
+          </div>
+         
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+            <div class="review-stars">
+              <input type="radio" name="star-3" id="star1-3"><label for="star1-3"></label>
+              <input type="radio" name="star-3" id="star2-3"><label for="star2-3"></label>
+              <input type="radio" name="star-3" id="star3-3"><label for="star3-3"></label>
+              <input type="radio" name="star-3" id="star4-3"><label for="star4-3"></label>
+              <input type="radio" name="star-3" id="star5-3"><label for="star5-3"></label>
+          </div>
+          
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+            <div class="review-stars">
+              <input type="radio" name="star-4" id="star1-4"><label for="star1-4"></label>
+              <input type="radio" name="star-4" id="star2-4"><label for="star2-4"></label>
+              <input type="radio" name="star-4" id="star3-4"><label for="star3-4"></label>
+              <input type="radio" name="star-4" id="star4-4"><label for="star4-4"></label>
+              <input type="radio" name="star-4" id="star5-4"><label for="star5-4"></label>
+          </div>
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+            <div class="review-stars">
+              <input type="radio" name="star-5" id="star1-5"><label for="star1-5"></label>
+              <input type="radio" name="star-5" id="star2-5"><label for="star2-5"></label>
+              <input type="radio" name="star-5" id="star3-5"><label for="star3-5"></label>
+              <input type="radio" name="star-5" id="star4-5"><label for="star4-5"></label>
+              <input type="radio" name="star-5" id="star5-5"><label for="star5-5"></label>
+          </div>
+          </div>
+        </div>
+          <img src="../images/shelf.png" alt="shelf" class="shelf">
+          
+      </div>
+      <div class="bookrow-shelf">
+        <div class="bookrow">
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+        </div>
+          <img src="../images/shelf.png" alt="shelf" class="shelf">
+          <!-- <div class="shelf"></div> -->
+      </div>
+      <div class="bookrow-shelf">
+        <div class="bookrow">
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+        </div>
+          <img src="../images/shelf.png" alt="shelf" class="shelf">
+          <!-- <div class="shelf"></div> -->
+      </div>
+      <div class="bookrow-shelf">
+        <div class="bookrow">
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+        </div>
+          <img src="../images/shelf.png" alt="shelf" class="shelf">
+          <!-- <div class="shelf"></div> -->
+      </div>
+      <div class="bookrow-shelf">
+        <div class="bookrow">
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+          <div class="book">
+            <img src="../images/solaris-cover.png" alt="" class="book-cover">
+          </div>
+        </div>
+          <img src="../images/shelf.png" alt="shelf" class="shelf">
+          <!-- <div class="shelf"></div> -->
+      </div>
+      
+    </div>
+  </div>
+
+  <footer>
+    <div class="info-links">
+      <div id="company">
+        COMPANY
+        <a href="about-us.html" class="custom-links footer">About us</a>
+        <a href="terms.html" class="custom-links footer">Terms</a>
+        <a href="privacy.html" class="custom-links footer">Privacy</a>
+        <a href="help.html" class="custom-links footer">Help</a>
+      </div>
+      <div id="work">
+        MISCELLANEOUS
+        <a href="https://www.goodreads.com/api" class="custom-links footer">Used API</a>
+        <a href="advertise" class="custom-links footer">Advertise</a>
+      </div>
+      <div id="connect">
+        CONNECT
+        <div id="wrapper-connect-links">
+          <a href="facebook" class="custom-links footer" id="facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="instagram" class="custom-links footer" id="instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="twitter" class="custom-links footer" id="twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="reddit" class="custom-links footer" id="reddit">
+            <i class="fab fa-reddit"></i>
+          </a>
+        </div>
+      </div>
+      <div id="mobile">
+        <a href="mobile-version" class="custom-links footer">Mobile version</a>
+        © 2020 BookWormhole, Inc.
+      </div>
+    </div>
+  </footer>
+  <script src="../javascripts/global.js"></script>
+  <script src="../javascripts/index.js"></script>
+</body>
+
+</html>

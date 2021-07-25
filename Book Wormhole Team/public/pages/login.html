@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/login.css">
+    <!-- <link rel="stylesheet" href="../stylesheets/global.css"> -->
+    <script src="https://kit.fontawesome.com/0ca67d7a6d.js" crossorigin="anonymous"></script>    
+    <title>Bookwormhole</title>
+</head>
+<body>
+    <header><img src="../images/logo-light.png" alt="Logo" id="logo"></header>
+
+    <div class="background-wrapper">
+
+        <div id="background-login">
+           <img src="../images/loginBook.png" alt="login-book" id="background-image">
+
+            <div id="book-wrapper">
+                <div id="title">
+                    Sign in to Bookwormhole
+                </div>
+                <div id="login-form-wrapper">
+                <form action="login" method="post" id="login-form">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="login-input">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="login-input">
+                </form>
+                </div>
+            </div>
+            <input type="submit" value="Login" id="submit-button">
+
+           <div class="login-another-site-wrapper">
+            <a href="register.html"><img src="../images/newAccount.png" alt="login-facebook" class="login-another-site"></a>
+            </div>
+        </div>
+
+    </div>
+    
+    <footer>
+        © 2020 PaperFeed Inc
+    </footer>
+    <script src="../javascripts/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+
+
+/*here i have(%) the image+stars+read state in a column side by side with the title author and extra details*/
+#book-review-wrapper{
+    margin-top:10vh;
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:3px solid violet; */
+}
+@media only screen and (max-width: 700px) {
+    #book-review-wrapper{
+        margin-top:20vh;
+    }
+}
+#book-review{
+    width: 80%;
+    height: auto;
+    /* border:3px solid red; */
+    display: flex;
+    flex-direction: row;
+}
+#cover-image{
+    height: 50vh;
+    width: 25vmin;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    /* border:3px solid blue; */
+    margin-right: 5vw;
+}
+.cover{
+    width: 25vmin;
+}
+.review-part{
+    background-color: #ffa24a;
+    color:#ffcf6e;
+    padding: 0.5em;
+}
+.review-part:nth-child(2n+1){
+    background-color: #ffcf6e;
+    color:#ffa24a;
+}
+/*details extra*/
+#review-text-wrapper{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/*leam lasat aici in caz ca e nevoie de edit pe componenta*/
+#title{
+    /* border:3px solid green; */
+}
+#author{
+    /* border:3px solid hotpink; */
+}
+#rating{
+    /* border:3px solid chocolate; */
+}
+#stats a{
+    color:inherit;
+    /* border:3px solid crimson; */
+}   
+#description{
+    /* border:3px solid cornflowerblue; */
+    margin-top:5vmin;
+    padding: 1em;
+    background-color: #4c3b32;
+    border-radius: 10px;
+
+}
+#page{
+    height:90%;
+    width: 90%;
+    padding:5%;
+    color:#484848;
+    background-color:#f9f9f9;
+    border-radius: 10px;
+}
+/*css for the read more button and hidden text*/
+#more{
+    display: none;
+}
+.button-css{
+    background-color: #322924;
+    color: #ffcf6e;
+    padding: 0.5em;
+    border: none;
+    font-size: 2vmin;
+    transition:background-color 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.button-css:hover{
+    background-color: #4e4744;
+}
+/*here % it ends*/
+/*comment-section*/
+#comment-section{
+    height:auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border:3px solid orange; */
+}
+
+#comment.user{
+    height:auto;
+    width: 100vw;
+}
+#form-comment{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#comment-text-area{
+    width: 100%;
+    height: auto;
+    background-color: #ffcf6e;
+}
+.comment{
+    height:auto;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    padding-bottom:5vmin;
+    margin-bottom:5vmin;
+    border-bottom:0.25em solid #4c3b32
+}
+.profile-picture{
+    width: 10vmin;
+    height:auto;
+    margin-right:5vmin;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    /* border:3px solid green; */
+}
+.user-name{
+    /* border:3px solid blue; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color:#4c3b32;
+    border-bottom:0.1em dashed #4c3b32;
+    /* overflow:hidden; */
+    display: inline;
+    overflow: hidden;
+    /*white-space: wrap;*/
+    text-overflow: ellipsis;
+    font-size: 0.6em;
+    /*hides long names or wraps them*/
+    
+}
+.profile-picture img{
+    border-radius:50%;
+    height:10vmin;
+    width: 10vmin;
+}
+/*comment-section end*/
+/*review stars start*/
+.review-stars{
+    /* border:3px solid red; */
+    display: flex;
+    flex-direction: row-reverse;
+    width: auto;
+}
+.review-stars input{
+    display: none;
+}
+.review-stars label{
+    display: block;
+    cursor: pointer;
+    width:auto;
+    z-index: 30;
+}
+.review-stars label:before{
+    content:'\f005';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    display: block;
+    font-size:130%;
+    color:#101010;
+    z-index: 30;
+}
+.review-stars label:after{
+    content:'\f005';
+    /* for font awesome i use my account
+    +set the font family to the one below with   
+    font-weight: 900; for solid,    
+    font-weight: 400;for simple and brands
+    */
+    /*DONT FORGET NUMBERS REVERSED:1=5 stars,5=1star!!!!*/
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: relative;
+    display: block;
+    font-size:130%;;
+    color:#ffe342;
+    top:0;
+    opacity: 0;
+    z-index: 30;
+    transition: .5s;
+    text-shadow: 0 3px 5px rgba(0,0,0,.5);
+
+}
+.review-stars label:hover:after,
+.review-stars input:hover ~ label:after,/*means it goes from the hover input up to all the elements after it*/
+.review-stars input:checked ~ label:after/*means it goes from the checked input and it makes all the label */
+{
+    opacity: 1;
+}
+/*review stars end*/
+/*reading state start*/
+.select-container{
+    display: flex;
+    width:  100%;
+    height: 100%;
+    flex-direction: column-reverse;
+}
+.select-container .options-container{
+    background-color: #ffcf6e;
+    color:#484848;
+    /*max-height: 0;*/
+    top:100%;
+    width:100%;
+    opacity:0;
+    transition:all 0.4s;
+    /* border-radius: 8px; */
+    overflow: hidden;
+    position: absolute;
+    z-index: 30;
+
+}
+.read-state{
+    position: relative;
+    width: 100%;
+    height:auto;
+    font-size:60%;
+    /* border:3px solid green;  */
+
+}
+.arrow{
+    height:0.5em;
+}
+.selected{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffa24a;
+    /* border-radius: 8em; */
+    color:#484848;
+    order:0;
+
+}
+.select-container .options-container.active{
+    opacity: 1;
+}
+.arrow{
+    transition:all ease-in;
+}
+.active .arrow{
+    transition: all ease-in;
+    transform:rotateX(180deg);
+}
+.select-container .option, .selected{
+    padding: 0.1em 0.2em;
+    cursor: pointer;
+}
+.select-container .option:hover{
+    background-color: #ffa24a;
+
+}
+.select-container label{
+    cursor: pointer;
+}
+.select-container .option .radio{
+    display: none;
+}
+/*reading state end*/
+

@@ -1,0 +1,38 @@
+#about-us-wrapper{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    min-height:60vh;
+    width: 100vw;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media only screen and (max-width: 700px) {
+    #about-us-wrapper{
+        margin-top:20vh;
+    }
+}
+#book{
+    background-color: #4c3b32;
+    border-radius: 5vmin;
+    height:auto;
+    padding: 5vmin;
+    max-width: 80vw;
+}
+#page{
+    padding:5vmin;
+    border-radius: 5vmin;
+    background-color: #f2f2f2;
+    color:#484848;
+    height:auto;
+}
+#bookmark{
+    position: absolute;
+    right:20vw;
+    height: 15vh;
+    width:10vw;
+    background-color: rgb(220, 20, 60);
+    clip-path: polygon(100% 0, 100% 100%, 50% 60%, 0 100%, 0 0);
+}

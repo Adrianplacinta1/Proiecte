@@ -1,0 +1,304 @@
+.search-box{
+    display: flex;
+    position: relative;
+    background:#FFCF6E;
+    height:10vmin;
+    width: auto;
+    border-radius:10em;
+    padding:0.3em;
+    z-index: 20;
+    /* border: 5px solid red; */
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+}
+
+.search-btn{
+    color:#f4f4f4;
+    width:10vmin;
+    height:10vmin;
+    font-size: 1.5em;
+    border-radius:50%;
+    background:#4c3b32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* border: 5px solid green; */
+
+}
+.search-btn:hover{
+  background: #4e4744;
+  transition:1s;
+}
+
+.search-txt{
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding:0px;
+    color:currentColor;
+    font-size: 0.9em;
+    transition: 0.4s ;
+    line-height: 1em;
+    width:0px;
+    /* border: 5px solid blue; */
+
+}
+.search-box:hover> .search-txt{
+    width: calc(100% - 10vmin);
+}
+#bookshelf-wrapper{
+    /*used to contain the bookshelf and sandwich it between the header and the footer  */
+    margin:0px;
+    padding: 0px;
+
+    height:100%;
+    width:100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#bookshelf{
+    /*border:3px solid [a-z]+;*/
+    width: 60vw;
+    height: auto;
+
+    margin:0px;
+    padding: 5vh;
+
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /* so it can be offset   */
+    margin-top:20vh;
+    margin-bottom: 20vh;
+
+    background-color: #453026;
+    border:5px solid #000000;
+}
+.bookrow-shelf{
+
+    margin:0px;
+    padding: 0px;
+
+    height: auto;
+    width:100%;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    /*border:3px solid [a-z]+;*/
+
+}
+.bookrow{
+    
+    /*border:3px solid [a-z]+;*/
+    margin:0px;
+    padding: 0px;
+
+    height: auto;
+    width:100%;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.book{
+
+    /* border:3px solid blue; */
+
+    margin:0px;
+    margin-left:1.5vw;
+    margin-right:1.5vw;
+    padding:0px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    width:12.5%;
+
+}
+.book-cover{
+    margin:0px;
+    padding:0px;
+
+    width:100%;
+    height:auto;
+    box-shadow: 3px 3px 3px #00000082;   
+    transition:top 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+    top:0;
+}
+.book-cover:hover{
+    top: -1em;
+}
+.shelf{
+    padding:0px;
+    margin:0px;
+    margin-bottom: 5vh;
+    /*border:3px solid [a-z]+;*/
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+/*review stars start*/
+.review-stars{
+    /* border:3px solid red; */
+    display: flex;
+    flex-direction: row-reverse;
+    width: auto;
+}
+.review-stars input{
+    display: none;
+}
+.review-stars label{
+    display: block;
+    cursor: pointer;
+    width:auto;
+    z-index: 30;
+}
+.review-stars label:before{
+    content:'\f005';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    display: block;
+    font-size:60%;
+    color:#101010;
+    z-index: 30;
+}
+.review-stars label:after{
+    content:'\f005';
+    /* for font awesome i use my account
+    +set the font family to the one below with   
+    font-weight: 900; for solid,    
+    font-weight: 400;for simple and brands
+    */
+    /*DONT FORGET NUMBERS REVERSED:1=5 stars,5=1star!!!!*/
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: relative;
+    display: block;
+    font-size:60%;;
+    color:#ffe342;
+    top:0;
+    opacity: 0;
+    z-index: 30;
+    transition: .5s;
+    text-shadow: 0 3px 5px rgba(0,0,0,.5);
+
+}
+.review-stars label:hover:after,
+.review-stars input:hover ~ label:after,/*means it goes from the hover input up to all the elements after it*/
+.review-stars input:checked ~ label:after/*means it goes from the checked input and it makes all the label */
+{
+    opacity: 1;
+}
+/*review stars end*/
+/*reading state start*/
+.select-container{
+    display: flex;
+    width:  100%;
+    height: 100%;
+    flex-direction: column-reverse;
+}
+.select-container .options-container{
+    background-color: #ffcf6e;
+    color:#484848;
+    /*max-height: 0;*/
+    top:100%;
+    width:100%;
+    opacity:0;
+    transition:all 0.4s;
+    /* border-radius: 8px; */
+    overflow: hidden;
+    position: absolute;
+    z-index: 30;
+
+}
+.read-state{
+    position: relative;
+    width: 130%;
+    height:auto;
+    font-size:60%;
+    /* border:3px solid green;  */
+
+}
+/* .selected::after{
+    content: "";
+    background: url("../images/arrow-down.png");
+    background-size: contain ;
+    background-repeat: no-repeat;
+
+    position: absolute;
+   
+    height:100%;
+    width:20%;
+    transition: all 0.4s;
+} */
+.arrow{
+    height:0.5em;
+}
+.selected{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffa24a;
+    /* border-radius: 8em; */
+    color:#484848;
+    order:0;
+
+}
+.select-container .options-container.active{
+    opacity: 1;
+}
+.arrow{
+    transition:all ease-in;
+}
+.active .arrow{
+    transition: all ease-in;
+    transform:rotateX(180deg);
+}
+.select-container .option, .selected{
+    padding: 0.1em 0.2em;
+    cursor: pointer;
+}
+.select-container .option:hover{
+    background-color: #ffa24a;
+
+}
+.select-container label{
+    cursor: pointer;
+}
+.select-container .option .radio{
+    display: none;
+}
+
+/*reading state end*/
+
+/*order by books*/
+.order{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    padding:5vmin;
+}
+.order-btn{
+    background-color: #4e4744;
+    padding:2.5vmin;
+    color:#f4f4f4;
+    font-size: 1em;
+    margin:1vmin;
+    cursor: pointer;
+}

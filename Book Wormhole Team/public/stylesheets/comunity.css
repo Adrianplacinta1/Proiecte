@@ -1,0 +1,117 @@
+#comunity-wrapper{
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    /* border: 5px solid red; */
+
+}
+
+.search-box{
+    display: flex;
+    position: relative;
+    background:#FFCF6E;
+    height:10vmin;
+    width: auto;
+    border-radius:10em;
+    padding:0.3em;
+    z-index: 20;
+    /* border: 5px solid red; */
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+}
+
+.search-btn{
+    color:#f4f4f4;
+    width:10vmin;
+    height:10vmin;
+    font-size: 1.5em;
+    border-radius:50%;
+    background:#4c3b32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* border: 5px solid green; */
+
+
+}
+.search-btn:hover{
+  background: #4e4744;
+  transition:1s;
+}
+
+.search-txt{
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding:0px;
+    color:currentColor;
+    font-size: 0.9em;
+    transition: 0.4s ;
+    line-height: 1em;
+    width:0px;
+    /* border: 5px solid blue; */
+
+}
+.search-box:hover> .search-txt{
+    width: calc(100% - 10vmin);
+}
+
+/*groups and other related how are they presented*/
+.groups-list{
+    width: 100vw;
+    min-height:30vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.group{
+    width: 80vw;
+    min-height:30vh;
+    height: auto;
+    display: flex
+}
+/* imaginea in sine mai sus e divul ei */
+#group-image{
+    border-radius: 50%;
+    height: 15vmin;
+    width: auto;
+}
+.group-name{
+    padding: 1em;
+    text-align: center;
+    border-bottom: 0.3em solid #4e4744;
+    font-size:1em
+}
+.group-detail{
+    margin-top:5vmin;
+    margin-bottom:5vmin;
+    padding:1.5em;
+    background-color:#4c3b32;
+    border-radius: 1em;
+
+}
+
+.group-title{
+    background-color: #4c3b32;
+    color:#FFCF6E;
+    text-decoration: none;
+    padding: 0.5vmin;
+    font-size: 1em;
+}
+@media only screen and (max-width: 700px) {
+    #comunity-wrapper{
+        margin-top:20vh
+    }
+    .search-txt{
+        width: calc(100% - 10vmin);
+    }
+}

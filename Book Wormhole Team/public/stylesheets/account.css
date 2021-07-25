@@ -1,0 +1,215 @@
+#account-wrapper{
+    width: 100vw;
+    min-height: 80vh;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid red; */
+}
+#account-information{
+    /* border: 3px solid orange; */
+
+    width: 80vw;
+    min-height: 80vh;
+    height:auto;
+    /* border:3px solid red; */
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+@media only screen and (max-width: 700px) {
+    #account-information{
+        margin-top:20vh;
+    }
+}
+#account-main-part{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    min-height: 50vh;
+    height:auto;
+    width: calc(100% - 11.5vmin);
+    border:1vmin dashed #4c3b32;
+    padding:5vmin;
+    margin-bottom: 5vmin;
+}
+#account-visual{
+    height:auto;
+    width: auto;
+    /* border:3px solid cadetblue; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+#account-image{
+    border-radius: 50%;
+    width: 15vmin;
+}
+#stats{
+    margin-top:1vmin;
+    height:5vmin;
+    /* border:3px solid orange; */
+}
+#username{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4c3b32;
+    padding: 1em;
+    border-radius: 0.3em;
+    font-size: 80%;
+    max-width: 80%;
+    width: auto;
+    margin-bottom: 3vmin;
+}
+#account-details{
+    width: 40vw;
+    /* border:3px solid violet; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+#extra-details{
+    background-color: #4c3b32;
+    padding: 1em;
+    border-radius: 0.3em;
+    height: auto;
+    margin-top:5vmin;
+}
+#activity{
+  /* background-color: gold; */
+}
+#details{
+    /* border:3px solid salmon; */
+
+}
+#birthday{
+    /* border:3px solid chocolate; */
+
+}
+#interests{
+    /* border:3px solid skyblue; */
+
+}
+.extra-details{
+    /* border:3px solid chartreuse; */
+    background-color: #ffa24a;
+    color:#ffcf6e;
+    padding:0.5em;
+
+}
+.extra-details:nth-child(2n+1){
+    background-color: #ffcf6e;
+    color:#ffa24a;
+}
+
+#account-bookshelves{
+    /* border:3px solid seagreen; */
+    height:auto;
+    width: 100%;
+}
+.title{
+    color:#4c3b32;
+    border-bottom: 0.3em solid #453026;
+    max-width: 6em;
+    margin-bottom: 3vmin;
+}
+.book-cover{
+    position: relative;
+    top:0;
+    transition:top 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.book-cover:hover{
+    top: -1em;
+}
+
+#bookshelf{
+    /*border:3px solid [a-z]+;*/
+    width: 60vw;
+    height: auto;
+
+    margin:0px;
+    padding: 5vh;
+
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /* so it can be offset   */
+    margin-top:20vh;
+    margin-bottom: 20vh;
+
+    background-color: #453026;
+    border:5px solid #000000;
+}
+.bookrow-shelf{
+
+    margin:0px;
+    padding: 0px;
+
+    height: auto;
+    width:100%;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    /*border:3px solid [a-z]+;*/
+
+}
+.bookrow{
+    
+    /*border:3px solid [a-z]+;*/
+    margin:0px;
+    padding: 0px;
+
+    height: auto;
+    width:100%;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.book{
+
+    /* border:3px solid blue; */
+
+    margin:0px;
+    margin-left:1.5vw;
+    margin-right:1.5vw;
+    padding:0px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    width:12.5%;
+
+}
+
+.book-cover{
+    margin:0px;
+    padding:0px;
+
+    width:100%;
+    height:auto;
+    box-shadow: 3px 3px 3px #00000082;   
+}
+.shelf{
+    padding:0px;
+    margin:0px;
+    margin-bottom: 5vh;
+    /*border:3px solid [a-z]+;*/
+    height: auto;
+    width: 100%;
+    position: relative;
+}

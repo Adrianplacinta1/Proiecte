@@ -1,0 +1,32 @@
+#genres-wrapper{
+    margin-top:10vh;
+    margin-bottom: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#genres{
+    padding: 10vh;
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: darkblue; */
+}
+.genre-item{
+    margin-right:4vmin;
+    margin-bottom: 4vmin;
+    height: 5vh;
+    width: 25%;
+    background-color: #ff8514;
+    color:#4c3b32;
+    transition:all 0.3s linear;
+    border:0.2em solid #4c3b32;
+    /* box-shadow: 0.3vmin 0.3vmin 1vmin #ff8514; */
+    
+}
+.genre-item:hover{
+    background-color: #ffcf6e;
+}
