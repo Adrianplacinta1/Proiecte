@@ -53,3 +53,112 @@ body{
     text-align: center;
     background-color: transparent;
 }
+
+.workerFrame{
+    background-image: url("images/png/frame.png");
+    background-repeat: no-repeat;
+    background-size: 13vw 4.6vh;
+    width: 13vw;
+    height:4.6vh;
+    text-align: center;
+    background-color: transparent;
+}
+
+.buttonDivContainer{
+    background-size: 13vw 4.6vh;
+    width: 3.7vmin;
+    height:3.7vmin;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.workerButton{
+    width: 3.7vmin;
+    height:3.7vmin;
+    background-color: transparent;
+    border-width: thin;
+    border-color: black;
+}
+
+#refugee{
+    background-image: url("images/png/workers/refugee.png");
+    background-repeat: no-repeat;
+    background-size: 3.7vmin 3.7vmin;
+    image-rendering: optimizeQuality;
+}
+
+#peasant{
+    background-image: url("images/png/workers/peasant.png");
+    background-repeat: no-repeat;
+    background-size: 3.7vmin 3.7vmin;
+    image-rendering: optimizeQuality;
+}
+#hunter{
+    background-image: url("images/png/workers/hunter.png");
+    background-repeat: no-repeat;
+    background-size: 3.7vmin 3.7vmin;
+    image-rendering: optimizeQuality;
+}
+
+#lumberjack{
+    background-image: url("images/png/workers/lumberjack.png");
+    background-repeat: no-repeat;
+    background-size: 3.7vmin 3.7vmin;
+    image-rendering: optimizeQuality;
+}
+
+#miner{
+    background-image: url("images/png/workers/miner.png");
+    background-repeat: no-repeat;
+    background-size: 3.7vmin 3.7vmin;
+    image-rendering: optimizeQuality;
+}
+
+#mason{
+    background-image: url("images/png/workers/mason.png");
+    background-repeat: no-repeat;
+    background-size: 3.7vmin 3.7vmin;
+    image-rendering: optimizeQuality;
+}
+
+#blacksmith{
+    background-image: url("images/png/workers/blacksmith.png");
+    background-repeat: no-repeat;
+    background-size: 3.7vmin 3.7vmin;
+    image-rendering: optimizeQuality;
+}
+
+#goldsmith{
+    background-image: url("images/png/workers/goldsmith.png");
+    background-repeat: no-repeat;
+    background-size: 3.7vmin 3.7vmin;
+    image-rendering: optimizeQuality;
+}
+
+#armourer{
+    background-image: url("images/png/workers/armourer.png");
+    background-repeat: no-repeat;
+    background-size: 3.7vmin 3.7vmin;
+    image-rendering: optimizeQuality;
+}
+
+#horse{
+    background-image: url("images/png/horse2.png");
+    background-repeat: no-repeat;
+    background-size: 3.7vmin 3.7vmin;
+    image-rendering: optimizeQuality;
+}
+
+#merchant{
+    background-image: url("images/png/workers/merchant.png");
+    background-repeat: no-repeat;
+    background-size: 3.7vmin 3.7vmin;
+    image-rendering: optimizeQuality;
+}
+
+.workerSoldierNrCost{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:yellow;
+    user-select: none;
+    font-size: 1.8vmin;
+}
