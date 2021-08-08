@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="game/angularjs/angular.min.js"> </script>
+    <title>Intro</title>
+</head>
+<body ng-app="introApp" ng-controller="introCtrl">
+    <div id="flexer" ng-mouseup="resizeButton()">
+        <div id="textInfo">
+            <pre class="textPar">CLICK OUT THE INVADERS</pre>
+        </div>
+
+                    <div style ="display:flex; justify-content: center; align-items: flex-end; align-content:space-around; height:inherit;">
+                        <div style="height : 20vh">
+                            <div style="height : inherit; display:flex; align-items: center; align-content: center;">
+                                <button id="next" ng-click="fundal()" ng-mousedown="reduceButton()">Next</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        var app= angular.module("introApp",[]);
+        app.controller("introCtrl",function($scope){
+            $scope.ecran=1;
+            $scope.fundal=function(){
+                var flexer=document.getElementById("flexer");
+                var textInfo=document.getElementById("textInfo");
+                switch($scope.ecran){
+                    case 1:
+                        $scope.ecran+=1;
+                        var dir="game/images/png/backgrounds/intro1.jpg";
+                        flexer.style.backgroundImage="url("+dir+")";
+                        textInfo.innerHTML="<p class='textPar' style='margin-left: 10vw; text-align:center; width:90vw'>The neighbouring empire has invaded!</p>"+
+                        "<p class='textPar' style='margin-left: 10vw; text-align:center;width:90vw'>An evil army is sweeping through the nation,</p>"+
+                        "<p class='textPar' style='margin-left: 10vw; text-align:center;width:90vw'>destroying everything in its path.</p>"
+                        break;
+                    case 2:
+                        $scope.ecran+=1;
+                        var dir="game/images/png/backgrounds/intro2.png";
+                        flexer.style.backgroundImage="url("+dir+")";
+                        textInfo.innerHTML="<p class='textPar' style='margin-left: 5vw;text-align:left; width:95vw'>The King's armies have been defeated,</p>"+
+                        "<p class='textPar' style='margin-left: 5vw;text-align:left;width:95vw'>the country, reduced to ruin!</p>"+
+                        "<p class='textPar' style='margin-left: 5vw;text-align:left;width:95vw'>Just look at your castle!</p>"
+                        break;
+                    case 3:
+                        $scope.ecran+=1;
+                        var dir="game/images/png/backgrounds/intro3b.png";
+                        flexer.style.backgroundImage="url("+dir+")";
+                        textInfo.innerHTML=
+                        "<p class='textPar' style='margin-left: 0;font-size: 4vh; text-align:center; width:100vw'>"+
+                        "However, all in not lost. During your flee, you managed to rescue your family heirloom: a magic gold coin.</p>"+
+                        "<p class='textPar' style='margin-left: 0;font-size: 4vh; text-align:center;width:100vw'>"+
+                        "This special item creates gold out of thin air for its master, when they're in dire need.</p>"+
+                        "<p class='textPar' style='margin-left: 0;font-size: 4vh; text-align:center;width:100vw'>"+
+                        "Use its powers to gather men and build an army, before the enemy conquers the capital city!</p>"
+                        break;
+                    case 4:
+                        window.location.assign("game/Economy.html");
+                }
+            }
+            $scope.reduceButton=function(){
+                var button=document.getElementById("next");
+    
+                    button.style.width="8vw";
+                    button.style.height="4vh";
+                    button.style.fontSize="2.2vh";
+    
+                }
+    
+            $scope.resizeButton=function(){
+                var button=document.getElementById("next");
+                button.style.width="10vw";
+                button.style.height="5vh";
+                button.style.fontSize="3vh";
+            }
+    
+        })
+    </script>
+    
+</body>
+<style>
+    body{
+        background-color: black;
+        margin:0;
+    }
+    #textInfo{
+        position: absolute;
+    }
+    .textPar{
+        font-size: 5vh;
+        color: rgb(155,135,12);
+        margin-left : 10%;
+        min-width : 50vw;
+    }
+    #flexer{
+        height:100vh;
+        background-image:url("game/images/png/backgrounds/intro.jpg");
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        position:relative;
+    }
+    #next{
+        width: 10vw;
+        height: 5vh;
+        background-color: black;
+        color:white;
+        font-size: 3vh;
+        border-color: maroon;
+        border-width: medium;
+        align-self: center;
+    }
+
+</style>
+</html>
