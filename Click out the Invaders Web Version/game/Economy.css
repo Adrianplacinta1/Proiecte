@@ -16,7 +16,6 @@ body{
     position: absolute;
     height:40vh;
     width:100vw;
-
 }
 #flexerPtInfoBox{
     display:flex;
@@ -28,6 +27,8 @@ body{
     background-size: 19.3vw 36.5vh;
     height: 37vh;
     width: 19.5vw;
+    max-width: 19.5vw;
+    z-index: 5;
 }
 .scores{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -57,102 +58,101 @@ body{
 .workerFrame{
     background-image: url("images/png/frame.png");
     background-repeat: no-repeat;
-    background-size: 13vw 4.6vh;
-    width: 13vw;
-    height:4.6vh;
+    background-size: 16vw 7vh;
+    width: 16vw;
+    height:7vh;
     text-align: center;
     background-color: transparent;
 }
 
 .buttonDivContainer{
-    background-size: 13vw 4.6vh;
-    width: 3.7vmin;
-    height:3.7vmin;
+    width: 7vmin;
+    height:7vmin;
     margin-left: 1vw;
     margin-right: 1vw;
 }
 
 .workerButton{
-    width: 3.7vmin;
-    height:3.7vmin;
+    width: 6vmin;
+    height:6vmin;
     background-color: transparent;
     border-width: thin;
     border-color: black;
 }
 
-#refugee{
+#Refugee{
     background-image: url("images/png/workers/refugee.png");
     background-repeat: no-repeat;
-    background-size: 3.7vmin 3.7vmin;
+    background-size: 6vmin 6vmin;
     image-rendering: optimizeQuality;
 }
 
-#peasant{
+#Peasant{
     background-image: url("images/png/workers/peasant.png");
     background-repeat: no-repeat;
-    background-size: 3.7vmin 3.7vmin;
+    background-size: 6vmin 6vmin;
     image-rendering: optimizeQuality;
 }
-#hunter{
+#Hunter{
     background-image: url("images/png/workers/hunter.png");
     background-repeat: no-repeat;
-    background-size: 3.7vmin 3.7vmin;
+    background-size: 6vmin 6vmin;
     image-rendering: optimizeQuality;
 }
 
-#lumberjack{
+#Lumberjack{
     background-image: url("images/png/workers/lumberjack.png");
     background-repeat: no-repeat;
-    background-size: 3.7vmin 3.7vmin;
+    background-size: 6vmin 6vmin;
     image-rendering: optimizeQuality;
 }
 
-#miner{
+#Miner{
     background-image: url("images/png/workers/miner.png");
     background-repeat: no-repeat;
-    background-size: 3.7vmin 3.7vmin;
+    background-size: 6vmin 6vmin;
     image-rendering: optimizeQuality;
 }
 
-#mason{
+#Mason{
     background-image: url("images/png/workers/mason.png");
     background-repeat: no-repeat;
-    background-size: 3.7vmin 3.7vmin;
+    background-size: 6vmin 6vmin;
     image-rendering: optimizeQuality;
 }
 
-#blacksmith{
+#Blacksmith{
     background-image: url("images/png/workers/blacksmith.png");
     background-repeat: no-repeat;
-    background-size: 3.7vmin 3.7vmin;
+    background-size: 6vmin 6vmin;
     image-rendering: optimizeQuality;
 }
 
-#goldsmith{
+#Goldsmith{
     background-image: url("images/png/workers/goldsmith.png");
     background-repeat: no-repeat;
-    background-size: 3.7vmin 3.7vmin;
+    background-size: 6vmin 6vmin;
     image-rendering: optimizeQuality;
 }
 
-#armourer{
+#Armourer{
     background-image: url("images/png/workers/armourer.png");
     background-repeat: no-repeat;
-    background-size: 3.7vmin 3.7vmin;
+    background-size: 6vmin 6vmin;
     image-rendering: optimizeQuality;
 }
 
-#horse{
+#Horse{
     background-image: url("images/png/horse2.png");
     background-repeat: no-repeat;
-    background-size: 3.7vmin 3.7vmin;
+    background-size: 6vmin 6vmin;
     image-rendering: optimizeQuality;
 }
 
-#merchant{
+#Merchant{
     background-image: url("images/png/workers/merchant.png");
     background-repeat: no-repeat;
-    background-size: 3.7vmin 3.7vmin;
+    background-size: 6vmin 6vmin;
     image-rendering: optimizeQuality;
 }
 
@@ -160,5 +160,185 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color:yellow;
     user-select: none;
-    font-size: 1.8vmin;
+    font-size: 2.2vmin;
+}
+
+.upgradeButton{
+    background-image: url("images/png/upgrade.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    width:6vmin;
+    height:6vmin;
+    image-rendering: optimizeQuality;
+}
+
+.hideUpgradeButton{
+    width:6vmin;
+    height:6vmin;
+}
+
+
+/* ............................................................SOLDIERS.............................................................................. */
+
+.soldierFrame{
+    background-image: url("images/png/frame.png");
+    background-repeat: no-repeat;
+    background-size: 12vw 7vh;
+    width: 12vw;
+    height:7vh;
+    text-align: center;
+    background-color: transparent;
+}
+
+
+.soldierButton{
+    width: 6vmin;
+    height:6vmin;
+    background-color: transparent;
+    border-width: thin;
+    border-color: black;
+}
+
+/* rabble,militia,archer,crossbowman,arbalest,musketeer,axeman,spearman,pikeman,builder, engineer, ballista,
+maceman,catapult,warhammer, swordsman,lCav,hCav,cannon */
+
+#Rabble{
+    background-image: url("images/png/soldiers/rabble.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#Militia{
+    background-image: url("images/png/soldiers/militia.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#Archer{
+    background-image: url("images/png/soldiers/archer.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#Crossbowman{
+    background-image: url("images/png/soldiers/crossbowman.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#Arbalest{
+    background-image: url("images/png/soldiers/arbalest.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#Musketeer{
+    background-image: url("images/png/soldiers/musketeer.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#Axeman{
+    background-image: url("images/png/soldiers/axeman.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#Spearman{
+    background-image: url("images/png/soldiers/spearman.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#Pikeman{
+    background-image: url("images/png/soldiers/pikeman.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#Builder{
+    background-image: url("images/png/soldiers/builder.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#Engineer{
+    background-image: url("images/png/soldiers/engineer.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#Ballista{
+    background-image: url("images/png/soldiers/ballista.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#Maceman{
+    background-image: url("images/png/soldiers/maceman.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#Catapult{
+    background-image: url("images/png/soldiers/catapult.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#Warhammer{
+    background-image: url("images/png/soldiers/warhammer.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#Swordsman{
+    background-image: url("images/png/soldiers/swordsman.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#Light_Cav{
+    background-image: url("images/png/soldiers/lcav.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#Heavy_Cav{
+    background-image: url("images/png/soldiers/hcav.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#Cannon{
+    background-image: url("images/png/soldiers/cannon.png");
+    background-repeat: no-repeat;
+    background-size: 6vmin 6vmin;
+    image-rendering: optimizeQuality;
+}
+
+#infoBoxH2{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-size: 2vmin;
 }

@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Economy.css">
-    <script src="angularjs/angular.min.js"> </script>
+    <!-- <script src="angularjs/angular.min.js"> </script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-sanitize.js"></script>
     <script src="Classes.js"></script>
     <script src="Economy.js"></script>
     <title>Economy</title>
@@ -14,10 +16,10 @@
     <div id="background" ng-app="myApp" ng-controller="myCtrl"  ng-mouseup="resizeButton()">
         <div id="astaTineTot">
 
-            <div id="containerPtInfoBox">
+            <div id="containerPtInfoBox" >
                 <div id="flexerPtInfoBox">
-                    <div id=infoBox>
-
+                    <div id=infoBox ng-mouseover="infoBox('reset')">
+                        <p id="infoBoxH2" ng-bind-html="infoBoxContent"></p>
                     </div>
                 </div>
             </div>
@@ -30,7 +32,7 @@
 
                             <div id="goldCoinContainer" style="height : 18vh">
                                 <div id=goldCoinFlexer style="height : inherit; display:flex; align-items: center; align-content: center;">
-                                    <div id="coin" ng-click=addGold() ng-mousedown="reduceCoin('coin')"> </div>
+                                    <div id="coin" ng-click=addGold() ng-mousedown="reduceCoin('coin')" ng-mouseover="infoBox('coin')"> </div>
                                 </div>
                             </div>
 
@@ -38,49 +40,86 @@
                             
                             <div id="coinUpgradeContainer" style="height : 5.1vh; margin-top: 2vh">
                                 <div id="coinUpgradeFlexer" style="height : inherit; display:flex; align-items: center; align-content: center;">
-                                    <button id="coinUpgrade"class="scores" ng-mousedown="reduceCoinUpgrade('coinUpgrade')"> Upgrade: <span>30</button>
+                                    <button id="coinUpgrade"class="scores" ng-mousedown="reduceCoinUpgrade('coinUpgrade')">{{"Upgrade: " + gold.coinUpgradeCost }}</button>
                                 </div>
                             </div>
 
+                            
+                            <div class=workersContainer style="width:40vw">
+                                <div class="workersFlexer" style="width:inherit; display:flex; flex-direction: row; flex-wrap:wrap; justify-content: space-evenly;">
+                                    <div class=workerUpgradeContainer style=" margin-top: 2vh;display:flex" ng-repeat="worker in workers">
+                                        <div class="workerFrame" >
+                                            <div style="height : inherit; display:flex; align-items: center; justify-content: flex-start;">
+                                                    <div class="buttonDivContainer">
+                                                        <div class="buttonDivFlexer" style="height : inherit; display:flex; align-items: center; justify-content: center;">
+                                                            <button class="workerButton" id="{{worker.name}}" ng-mousedown="reduceButton(worker.name)" ng-click="buyWorker(worker)" ng-mouseover="infoBox(worker.name)"></button>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div style="display: flex; flex-direction: column;">
+                                                        <p class="workerSoldierNrCost" style="margin: 0;">{{'x'+worker.number}}</p>
+                                                        <p class="workerSoldierNrCost" style="margin: 0;">Cost: 20</p>
+                                                    </div>
 
 
-                            <div style=" margin-top: 1vh" class="workerFrame" ng-repeat="worker in workers">
-                                <div style="height : inherit; display:flex; align-items: center; justify-content: flex-start;">
-                                        <div class="buttonDivContainer">
-                                            <div class="buttonDivFlexer" style="height : inherit; display:flex; align-items: center; justify-content: center;">
-                                                <button class="workerButton" id="{{worker.name}}" ng-mousedown="reduceButton(worker.name)" ng-click="buyWorker(worker)"></button>
+                                                
+                                            </div>
+                                        </div>
+                                        <div style="width:7vh;height:7vh">
+                                            <div  style="display:flex; justify-content:center; align-items:center; height:inherit">
+                                                <div ng-if=worker.canBeUpgraded class="upgradeButton" id={{worker.upgrade}} ng-mousedown="reduceButton(worker.upgrade)" ng-mouseover="infoBox(worker.upgrade)"></div>
+                                                <div ng-if=!worker.canBeUpgraded class="hideUpgradeButton"></div>
                                             </div>
 
                                         </div>
 
-                                        <div style="display: flex; flex-direction: column;">
-                                            <p class="workerSoldierNrCost" style="margin: 0;">{{'x'+worker.number}}</p>
-                                            <p class="workerSoldierNrCost" style="margin: 0;">Cost: 20</p>
-                                        </div>
-
-
-                                    
+                                    </div>
                                 </div>
                             </div>
-
-
-                            <!-- <div style="height : 5.1vh; margin-top: 2vh">
-                                <div style="height : inherit; display:flex; align-items: center; align-content: center;">
-                                    <div class="workerFrame">
-                                        <button class="workerButton" id="refugeeButton"></button>
-                                    </div>
-                                    
-                                </div>
-                            </div> -->
-
-
-
                         </div>
                     </div>
+
+
+
                     <div id="divArmata" style="width:50vw; height:100vh">
                         <div id="flexerArmata" style="display: flex; height: inherit;flex-direction: column ; align-items: center;">
                             <pre id="armyScore" class="scores" style="margin-left: 10%;">   <span>Army Strength: 0</span>    <span>Victories: 0/30</span></pre>
+
+                            <div class=soldiersContainer style="width:35vw; align-self:flex-end; max-height: 90vh;">
+                                <div class="soldiersFlexer" style="width:inherit; height: inherit;max-height: inherit; display:flex; flex-direction: column; flex-wrap:wrap; justify-content: space-evenly;">
+                                    <div class=soldierUpgradeContainer style=" margin-top: 1.5vh;display:flex" ng-repeat="soldier in soldiers">
+                                        <div class="soldierFrame" >
+                                            <div style="height : inherit; display:flex; align-items: center; justify-content: flex-start;">
+                                                    <div class="buttonDivContainer">
+                                                        <div class="buttonDivFlexer" style="height : inherit; display:flex; align-items: center; justify-content: center;">
+                                                            <button class="soldierButton" id="{{soldier.name}}" ng-mousedown="reduceButton(soldier.name)" ng-click="buyWorker(soldier)"ng-mouseover="infoBox(soldier.name)"></button>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div style="display: flex; flex-direction: column;">
+                                                        <p class="workerSoldierNrCost" style="margin: 0;">{{'x'+soldier.number}}</p>
+                                                        <p class="workerSoldierNrCost" style="margin: 0;">Cost: 20</p>
+                                                    </div>
+
+
+                                                
+                                            </div>
+                                        </div>
+                                        <div style="width:7vh;height:7vh">
+                                            <div  style="display:flex; justify-content:center; align-items:center; height:inherit">
+                                                <div ng-if=soldier.canBeUpgraded class="upgradeButton" id={{soldier.upgrade}} ng-mousedown="reduceButton(soldier.upgrade)" ng-mouseover="infoBox(soldier.upgrade)"></div>
+                                                <div ng-if=!soldier.canBeUpgraded class="hideUpgradeButton"></div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>

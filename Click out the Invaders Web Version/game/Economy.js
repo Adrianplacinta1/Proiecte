@@ -1,8 +1,7 @@
-var app=angular.module("myApp",[]);
+var app=angular.module("myApp",['ngSanitize']);
 app.controller("myCtrl",function($scope){
     $scope.score=0;
     $scope.clickedButton='';
-    $scope.workers=['refugeeButton','peasantButton']
 
     $scope.reduceCoin=function(cine){
         var button=document.getElementById(cine);
@@ -25,9 +24,9 @@ app.controller("myCtrl",function($scope){
 
     $scope.reduceButton=function(cine){
         var button=document.getElementById(cine);
-        button.style.width="3.4vmin";
-        button.style.height="3.4vmin";
-        button.style.backgroundSize="3.4vmin 3.4vmin";
+        button.style.width="5vmin";
+        button.style.height="5vmin";
+        button.style.backgroundSize="5vmin 5vmin";
         $scope.clickedButton=cine;
         console.log("S-a redus");
     }
@@ -49,25 +48,75 @@ app.controller("myCtrl",function($scope){
         }
 
         for(i=0;i<$scope.workers.length;i++){
-            if($scope.clickedButton==$scope.workers[i].name){
-                button.style.width="3.7vmin";
-                button.style.height="3.7vmin";
-                button.style.backgroundSize="3.7vmin 3.7vmin";
+            if($scope.clickedButton==$scope.workers[i].name ||$scope.clickedButton==$scope.workers[i].upgrade){
+                button.style.width="6vmin";
+                button.style.height="6vmin";
+                button.style.backgroundSize="6vmin 6vmin";
+                return;
+            }
+
+        }
+
+        for(i=0;i<$scope.soldiers.length;i++){
+            if($scope.clickedButton==$scope.soldiers[i].name ||$scope.clickedButton==$scope.soldiers[i].upgrade){
+                button.style.width="6vmin";
+                button.style.height="6vmin";
+                button.style.backgroundSize="6vmin 6vmin";
                 return;
             }
 
         }
     };
 
+    $scope.gold=gold;
+
     $scope.addGold=function(){
-        $scope.score+=1;
+        $scope.score+=$scope.gold.coinProduction;
     }
 
     $scope.workers=workerList;
 
     $scope.buyWorker=function(x){
         x.number+=1;
-        console.log(workerList[0].number)
     }
 
+    $scope.soldiers=soldierList;    
+
+    //.......................................PARTEA DE UMPLUT INFO BOX.....................................
+
+    $scope.infoBoxContent="";
+
+    $scope.infoBox=function(x){
+
+
+        if(x=='coin'){
+            $scope.infoBoxContent="Magic Gold Coin  <br> <br> Each click gives you"+$scope.gold.coinProduction+ "gold";
+            return
+        }
+            for(i=0;i<$scope.workers.length;i++){
+                if(x==$scope.workers[i].name){
+                    $scope.infoBoxContent=$scope.workers[i].name;
+                    return;
+                }
+                else if(x==$scope.workers[i].upgrade){
+                    $scope.infoBoxContent=$scope.workers[i].name+ " Upgrade";
+                    return;
+                }
+    
+            }
+
+            for(i=0;i<$scope.soldiers.length;i++){
+                if(x==$scope.soldiers[i].name){
+                    $scope.infoBoxContent=$scope.soldiers[i].name;
+                    return;
+                }
+                else if(x==$scope.soldiers[i].upgrade){
+                    $scope.infoBoxContent=$scope.soldiers[i].name+ " Upgrade";
+                    return;
+                }
+    
+            }
+
+            $scope.infoBoxContent="INFO BOX <br><br> Place mouse over something to find out what it does";
+    }
 });
